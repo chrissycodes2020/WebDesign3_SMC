@@ -5,6 +5,8 @@ body {
 header h1 {
   text-align: left;
   padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
 }
 
 .flex-container {
@@ -18,6 +20,8 @@ header h1 {
   margin: 20px;
   padding: 10px;
   line-height: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
 }
 
 .Ryoichi {
@@ -29,6 +33,7 @@ header h1 {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .grid img {
@@ -87,6 +92,23 @@ header h1 {
   text-align: left;
   margin: 20px;
   padding: 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+.form-container button {
+  width: 160px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.form-container input {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form-container textarea {
+  width: 100%;
+  height: 200px;
 }
 
 /* Mobile View @ */
@@ -103,6 +125,25 @@ header h1 {
   main {
     width: 760px;
     margin-top: 12px;
+  }
+
+  .flex-container {
+    display: inline-flex;
+  }
+
+  .image {
+    height: 300px;
+    width: 300px;
+  }
+
+  .bio {
+    height: 300px;
+    width: 450px;
+  }
+
+  .bio p {
+    margin: 0px;
+    padding-left: 30px;
   }
 
   .grid {
@@ -155,5 +196,12 @@ header h1 {
   .grid-item9 {
     grid-row-start: 3;
     grid-column: 3 / 4;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    width: 1200px;
+    margin-top: 12px;
   }
 }
