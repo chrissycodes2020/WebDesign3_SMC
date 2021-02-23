@@ -1,33 +1,16 @@
-header {
-  max-width: 100%;
+body {
   margin: 0px;
 }
 
-.flex-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-nav {
-    text-align: right;
-    flex-grow: 1;
-}
-
-.heading-container{
-    width:150px;
-    height: 150px;
-    margin: none;
-}
-
 header h1 {
-  width: 50px;
   text-align: left;
-  margin: 0;
+  padding: 10px;
 }
 
-.flex-nav li {
-  list-style: none;
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid img {
@@ -35,19 +18,118 @@ header h1 {
   margin: auto;
 }
 
+.grid-item1 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.grid-item2 {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.grid-item3 {
+  grid-row-start: 3;
+  grid-column: 1 / 4;
+}
+
+.grid-item4 {
+  grid-row-start: 4;
+  grid-column: 1 / 4;
+}
+
+.grid-item5 {
+  grid-row-start: 5;
+  grid-column: 1 / 4;
+}
+
+.grid-item6 {
+  grid-row-start: 6;
+  grid-column: 1 / 4;
+}
+
+.grid-item7 {
+  grid-row-start: 7;
+  grid-column: 1 / 4;
+}
+
+.grid-item8 {
+  grid-row-start: 8;
+  grid-column: 1 / 4;
+}
+
+.grid-item9 {
+  grid-row-start: 9;
+  grid-column: 1 / 4;
+}
+
 /* Mobile View @ */
 
 @media (min-width: 450px) {
-    main {
-      width: 400px;
-    }
+  main {
+    width: 400px;
+  }
+}
+
+/* Medium View @ */
+
+@media (min-width: 768px) {
+  main {
+    width: 760px;
+    margin-top: 12px;
   }
 
-  /* Medium View @ */
+  .grid {
+    width: 760px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
+  .grid-item1 {
+    grid-row: 1;
+    grid-column: 1 / 2;
+  }
 
-  @media (min-width: 768px) {
-    main {
-      width: 760px;
-      margin-top: 12px;
-    }
+  .grid-item2 {
+    grid-row-start: 1;
+    grid-column: 2 / 3;
+  }
+
+  .grid-item3 {
+    grid-row: 1 / 1;
+    grid-column: 3 / 4;
+  }
+
+  .grid-item4 {
+    grid-row-start: 2;
+    grid-column: 1 / 2;
+  }
+
+  .grid-item5 {
+    grid-row-start: 2;
+    grid-column: 2 / 3;
+  }
+
+  .grid-item6 {
+    grid-row-start: 2;
+    grid-column: 3 / 4;
+  }
+
+  .grid-item7 {
+    grid-row-start: 3;
+    grid-column: 1 / 2;
+  }
+
+  .grid-item8 {
+    grid-row-start: 3;
+    grid-column: 2 / 3;
+  }
+
+  .grid-item9 {
+    grid-row-start: 3;
+    grid-column: 3 / 4;
+  }
+}
