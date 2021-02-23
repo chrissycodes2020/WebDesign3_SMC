@@ -1,0 +1,16 @@
+header {
+  max-width: 100%;
+  margin: 0px;
+}
+
+.flex-nav {
+  display: flex;
+}
+
+.flex-nav h1 {
+  width: 100px;
+}
+
+.flex-nav li {
+  list-style: none;
+}
