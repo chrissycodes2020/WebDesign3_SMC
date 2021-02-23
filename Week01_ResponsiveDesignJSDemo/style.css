@@ -5,10 +5,25 @@ header {
 
 .flex-nav {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.flex-nav h1 {
-  width: 100px;
+nav {
+    text-align: right;
+    flex-grow: 1;
+}
+
+.heading-container{
+    width:150px;
+    height: 150px;
+    margin: none;
+}
+
+header h1 {
+  width: 50px;
+  text-align: left;
+  margin: 0;
 }
 
 .flex-nav li {
@@ -19,3 +34,20 @@ header {
   max-width: 100%;
   margin: auto;
 }
+
+/* Mobile View @ */
+
+@media (min-width: 450px) {
+    main {
+      width: 400px;
+    }
+  }
+
+  /* Medium View @ */
+
+
+  @media (min-width: 768px) {
+    main {
+      width: 760px;
+      margin-top: 12px;
+    }
