@@ -12,9 +12,21 @@
 
     <style>
     .jumbotron {
-      background-position: center;
+      background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
+    }
+
+    .lead.text-muted {
+      color: white !important;
+    }
+
+    .fw-light {
+      color: white !important;
+    }
+
+    .row.py-lg-5{
+      background-color: rgba(0, 0, 0, 0.3);
     }
 
     </style>
@@ -30,18 +42,17 @@
     <main>
 
       <section class="py-5 text-xl-center container-fluid jumbotron"
-        style="background-image: url(../Week03_HW/Images/coffeejumbotron.png)">
+        style="background-image: url(../Week03_HW/Images/coffee05.png)">
   
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
   
-            <h1 class="fw-light">Album example</h1>
+            <h1 class="fw-light">Extraordinary Coffee</h1>
   
-            <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator,
-              etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+            <p class="lead text-muted">Our coffee is thoughtfully sourced and roasted to order. Ready to drink direct trade coffee like you've never tasted before.</p>
             <p>
-              <a href="#" class="btn btn-primary my-2">Main call to action</a>
-              <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+              <a href="#" class="btn btn-primary my-2">Shop Now</a>
+              <a href="#" class="btn btn-secondary my-2">Take The Quiz</a>
             </p>
   
           </div>
@@ -57,10 +68,13 @@
         <div class="row featurette">
   
           <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span>
+            
+            <h2 class="featurette-heading">Black Cat <span class="text-muted">Dark Chocolate, Cherry, Brown Sugar</span>
             </h2>
-            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose
-              here.</p>
+
+            <p class="lead">This syrupy sweet espresso blend has been the staple of our lineup since the very beginning. Supreme balance and a wonderful sweetness make this a classic.
+
+            </p>
           </div>
   
           <div class="col-md-5">
@@ -84,12 +98,12 @@
               layout would work with some actual real-world content in place.</p>
           </div>
           <div class="col-md-5 order-md-1">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-              height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
+            <picture>
+              <source media="(min-width: 1400px)" srcset="../Week03_HW/Images/coffee04_520.png">
+              <source media="(min-width: 992px)" srcset="../Week03_HW/Images/coffee04_500.png">
+              <source media="(min-width: 768px)" srcset="../Week03_HW/Images/coffee04_350.png"> 
+              <img src="../Week03_HW/Images/coffee04_520.png" alt="red coffee" class="img-fluid">
+            </picture>
   
           </div>
         </div>
@@ -104,12 +118,13 @@
               actual content. Your content.</p>
           </div>
           <div class="col-md-5">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-              height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-              preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
+            <picture>
+              <source media="(min-width: 1400px)" srcset="../Week03_HW/Images/coffee03_520.png">
+              <source media="(min-width: 992px)" srcset="../Week03_HW/Images/coffee03_500.png">
+              <source media="(min-width: 768px)" srcset="../Week03_HW/Images/coffee03_350.png"> 
+              <img src="../Week03_HW/Images/coffee04_520.png" alt="red coffee" class="img-fluid">
+            </picture>
+            
   
           </div>
         </div>
