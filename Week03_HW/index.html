@@ -1,39 +1,41 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Google Fonts-->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,500&display=swap" rel="stylesheet">
+  <!-- Google Fonts-->
 
-    <title>Jumbotron, featurettes, lists, and tables</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,500&display=swap"
+    rel="stylesheet">
 
-    <style>
+  <title>Jumbotron, featurettes, lists, and tables</title>
 
-    body{
-      font-family: 'Roboto', sans-serif !important; 
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif !important;
     }
 
-    h1.fw-light{
+    h1.fw-light {
       font-weight: 700 !important;
     }
 
-    .text-muted{
+    .text-muted {
       font-weight: 300 !important;
 
     }
 
     /* Does't Work */
 
-    #text{
-      color:red !important;
+    #text {
+      color: red !important;
     }
 
     .jumbotron {
@@ -50,127 +52,210 @@
       color: white !important;
     }
 
-    .row.py-lg-5{
+    .row.py-lg-5 {
       background-color: rgba(0, 0, 0, 0.3);
     }
 
-    </style>
+    .featurette-divider {
+      color: red !important;
+
+    }
+
+    .table{
+      height: 500px !important;
+    }
+
+    th{
+      height: 50px !important;
+    }
+
+    td{
+      height: 50px !important;
+
+    }
+
+  </style>
 
 
-  </head>
-  <body>
+</head>
 
-    <header>
+<body>
 
-    </header>
+  <header>
 
-    <main>
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="Images/logo.png" alt="logo" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Subscriptions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Approach</a>
+            </li>
 
-      <section class="py-5 text-xl-center container-fluid jumbotron"
-        style="background-image: url(../Week03_HW/Images/coffee05.png)">
-  
-        <div class="row py-lg-5">
-          <div class="col-lg-6 col-md-8 mx-auto">
-  
-            <h1 class="fw-light">Extraordinary Coffee</h1>
-  
-            <p class="lead text-muted">Our coffee is thoughtfully sourced and roasted to order. Ready to drink direct trade coffee like you've never tasted before.</p>
-            <p>
-              <a href="#" class="btn btn-primary my-2">Shop Now</a>
-              <a href="#" class="btn btn-secondary my-2">Take The Quiz</a>
-            </p>
-  
-          </div>
+            </li>
+          </ul>
         </div>
-      </section>
-  
-  
-      <section class="container">
-        <!-- START THE FEATURETTES -->
-  
-        <hr class="featurette-divider">
-  
-        <div class="row featurette">
-  
-          <div class="col-md-7">
+      </div>
+    </nav>
 
-            <h2 class="featurette-heading">Black Cat <span class="text-muted">Dark Chocolate, Cherry, Brown Sugar</span>
-            </h2>
+  </header>
 
-            <p class="lead">This syrupy sweet espresso blend has been the staple of our lineup since the very beginning. Supreme balance and a wonderful sweetness make this a classic.
+  <main>
 
-            </p>
-          </div>
-  
-          <div class="col-md-5">
-            <picture>
-              <source media="(min-width: 1400px)" srcset="../Week03_HW/Images/coffee01_520.png">
-              <source media="(min-width: 992px)" srcset="../Week03_HW/Images/coffee01_500.png">
-              <source media="(min-width: 768px)" srcset="../Week03_HW/Images/coffee01_350.png">
-              <img src="../Week03_HW/Images/coffee01_520.png" alt="coffee" class="img-fluid">
-  
-            </picture>
-          </div>
-  
+    <section class="py-5 text-xl-center container-fluid jumbotron"
+      style="background-image: url(../Week03_HW/Images/coffee05.png)">
+
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+
+          <h1 class="fw-light">Extraordinary Coffee</h1>
+
+          <p class="lead text-muted">Our coffee is thoughtfully sourced and roasted to order. Ready to drink direct
+            trade coffee like you've never tasted before.</p>
+          <p>
+            <a href="#" class="btn btn-primary my-2">Shop Now</a>
+            <a href="#" class="btn btn-secondary my-2">Take The Quiz</a>
+          </p>
+
         </div>
-  
-        <hr class="featurette-divider">
-  
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Frequency Blend <span class="text-muted">Almond, Dried Fruit, Milk Chocolate</span></h2>
-            <p class="lead">Versatile and balanced, this blend is an easy-to-enjoy coffee with a smooth body. Hints of toasted almond and dried fruits accompany the predominant flavor of milk chocolate.</p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <picture>
-              <source media="(min-width: 1400px)" srcset="../Week03_HW/Images/coffee04_520.png">
-              <source media="(min-width: 992px)" srcset="../Week03_HW/Images/coffee04_500.png">
-              <source media="(min-width: 768px)" srcset="../Week03_HW/Images/coffee04_350.png"> 
-              <img src="../Week03_HW/Images/coffee04_520.png" alt="red coffee" class="img-fluid">
-            </picture>
-  
-          </div>
+      </div>
+    </section>
+
+
+    <section class="container">
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+
+        <div class="col-md-7">
+
+          <h2 class="featurette-heading">Black Cat <span class="text-muted">Dark Chocolate, Cherry, Brown Sugar</span>
+          </h2>
+
+          <p class="lead">This syrupy sweet espresso blend has been the staple of our lineup since the very beginning.
+            Supreme balance and a wonderful sweetness make this a classic.
+
+          </p>
         </div>
-  
-        <hr class="featurette-divider">
-  
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">Borealis Blend <span class="text-muted">Tangerine, Cherry, Cola</span></h2>
-            <p class="lead">Our seasonal winter blend is named for the dazzling Northern Lights, designed to inspire the same wonder. This year's blend features lots from Ethiopia, Guatemala, and Mexico to deliver sweetness and warmth.</p>
-          </div>
-          <div class="col-md-5">
-            <picture>
-              <source media="(min-width: 1400px)" srcset="../Week03_HW/Images/coffee03_520.png">
-              <source media="(min-width: 992px)" srcset="../Week03_HW/Images/coffee03_500.png">
-              <source media="(min-width: 768px)" srcset="../Week03_HW/Images/coffee03_350.png"> 
-              <img src="../Week03_HW/Images/coffee03_520.png" alt="red coffee" class="img-fluid">
-            </picture>
-            
-  
-          </div>
+
+        <div class="col-md-5">
+          <picture>
+            <source media="(min-width: 1400px)" srcset="../Week03_HW/Images/coffee01_520.png">
+            <source media="(min-width: 992px)" srcset="../Week03_HW/Images/coffee01_500.png">
+            <source media="(min-width: 768px)" srcset="../Week03_HW/Images/coffee01_350.png">
+            <img src="../Week03_HW/Images/coffee01_520.png" alt="coffee" class="img-fluid">
+
+          </picture>
         </div>
-  
-        <hr class="featurette-divider">
-  
-        <!-- /END THE FEATURETTES -->
-  
-      </section>
-  
-    </main>
 
-    <footer>
+      </div>
 
-    </footer>
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Frequency Blend <span class="text-muted">Almond, Dried Fruit, Milk
+              Chocolate</span></h2>
+          <p class="lead">Versatile and balanced, this blend is an easy-to-enjoy coffee with a smooth body. Hints of
+            toasted almond and dried fruits accompany the predominant flavor of milk chocolate.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <picture>
+            <source media="(min-width: 1400px)" srcset="../Week03_HW/Images/coffee04_520.png">
+            <source media="(min-width: 992px)" srcset="../Week03_HW/Images/coffee04_500.png">
+            <source media="(min-width: 768px)" srcset="../Week03_HW/Images/coffee04_350.png">
+            <img src="../Week03_HW/Images/coffee04_520.png" alt="red coffee" class="img-fluid">
+          </picture>
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Borealis Blend <span class="text-muted">Tangerine, Cherry, Cola</span></h2>
+          <p class="lead">Our seasonal winter blend is named for the dazzling Northern Lights, designed to inspire the
+            same wonder. This year's blend features lots from Ethiopia, Guatemala, and Mexico to deliver sweetness and
+            warmth.</p>
+        </div>
+        <div class="col-md-5">
+          <picture>
+            <source media="(min-width: 1400px)" srcset="../Week03_HW/Images/coffee03_520.png">
+            <source media="(min-width: 992px)" srcset="../Week03_HW/Images/coffee03_500.png">
+            <source media="(min-width: 768px)" srcset="../Week03_HW/Images/coffee03_350.png">
+            <img src="../Week03_HW/Images/coffee03_520.png" alt="red coffee" class="img-fluid">
+          </picture>
+
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    
+
+    <table class="table table-dark table-striped">
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Expresso</td>
+        <td>$3.75</td>
+      </tr>
+      <tr>
+        <td>Cappuccino</td>
+        <td>$4.25</td>
+      </tr>
+      <tr>
+        <td>Latte</td>
+        <td>$5.25</td>
+      </tr>
+      <tr>
+        <td>Blueberry Muffin</td>
+        <td>$7.25</td>
+      </tr>
+      <tr>
+        <td>Butter Croissant</td>
+        <td>$6.25</td>
+      </tr>
+
+    </table>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+  </footer>
 
 
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
 
-   
-  </body>
+
+</body>
+
 </html>
