@@ -1,0 +1,9 @@
+.alert-danger {
+    color: white;
+    background-color: limegreen;
+    
+}
+
+.alert-danger .alert-link{
+    color:thistle !important;
+}
