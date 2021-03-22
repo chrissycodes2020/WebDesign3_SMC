@@ -1,3 +1,60 @@
 header {
    
 }
+
+.container, .container-lg, .container-md, .container-sm {
+    max-width: 100%;
+
+}
+
+.top{
+    padding-top: 2.5em;
+}
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 3;
+    border: 3px solid white !important;
+    border-radius: .25rem;
+    transition: box-shadow .15s ease-in-out;
+}
+
+.logo {
+    height: 50px;
+}
+
+.navbar-toggler-icon{
+    color: 1px solid white !important;
+}
+
+.jumbotron {
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .fw-light {
+    font-weight: 700!important;
+    color: white !important;
+  }
+
+  .text-muted {
+      color: white !important;
+  }
+
+  .lead {
+    font-size: 1.0rem !important;
+  }
+
+  .card-title {
+    margin-bottom: .5rem;
+    font-size: 3rem;
+    margin-top: -45px;
+    color: red;
+    font-weight: 700;
+  }
