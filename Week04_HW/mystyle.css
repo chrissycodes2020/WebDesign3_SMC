@@ -45,16 +45,33 @@ body{
 
   .text-muted {
       color: white !important;
+      font-size: 1.5rem !important;
   }
 
   .lead {
-    font-size: 1.0rem !important;
+    font-size: 3.5rem !important;
   }
 
   .card-title {
     margin-bottom: .5rem;
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-top: -45px;
     color: red;
     font-weight: 700;
+  }
+
+  .blog-post{
+    padding-top: 4em;
+  }
+
+  .blog-post-title{
+    font-weight: bold !important;
+    font-size: 40px !important;
+  }
+
+  .author{
+    font-style: italic !important;
+    font-weight: 100 !important;
+    color: darkgrey !important;
+    padding-bottom: 2rem !important;
   }
