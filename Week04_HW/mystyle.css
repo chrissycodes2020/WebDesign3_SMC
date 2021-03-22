@@ -1,5 +1,6 @@
-header {
-   
+.red{
+    color:red !important;
+    font-weight: bolder;
 }
 
 .container, .container-lg, .container-md, .container-sm {
@@ -44,12 +45,13 @@ body{
   }
 
   .text-muted {
-      color: white !important;
+      color: darkgrey !important;
       font-size: 1.5rem !important;
   }
 
   .lead {
     font-size: 3.5rem !important;
+    font-family: 'Major Mono Display', monospace !important;
   }
 
   .card-title {
@@ -58,6 +60,7 @@ body{
     margin-top: -45px;
     color: red;
     font-weight: 700;
+    font-family: 'Major Mono Display', monospace !important;
   }
 
   .blog-post{
