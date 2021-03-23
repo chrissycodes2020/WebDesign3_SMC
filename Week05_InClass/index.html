@@ -21,7 +21,7 @@
       <div class="row">
           <div class="col">
               <h2>Checkout</h2>
-              <form action= "" method="GET">
+              <form action= "" method="POST">
 
                   <div class="mb-3">
                       <label for="userName">Your Name</label>
@@ -36,6 +36,11 @@
                 <div class="mb-3">
                     <label for="userPass">Password</label>
                     <input type="password" name="userPass" class="form-control" id="userPass">
+                </div>
+
+                <div class="form-check form-switch mb-3">
+                    <input type="checkbox" name="termsAgree" id="termsAgree" class="form-check-input">
+                    <label for="termsAgree" class="form-check-label">Agree to terms</label>
                 </div>
 
                 <button type="submit" class="btn btn-warning">Submit</button>
