@@ -78,6 +78,34 @@
 
                 </fieldset>
 
+                <h3>Billing</h3>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Check here is the billing add is the same as the shipping add.
+                    </label>
+                  </div>
+
+                <fieldset>
+
+                    <div class="mb-3">
+                        <label for="billingName">Billing Name</label>
+                        <input type="text" name="billingName" id="billingName" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="billingAddress">Billing Add</label>
+                        <input type="text" name="billingAddress" id="billingAddress" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="billingCity">Shipping City</label>
+                        <input type="text" name="billingCity" id="billingCity" class="form-control">
+                    </div>
+                    
+                </fieldset>
+
                 <button type="submit" class="btn btn-warning">Submit</button>
 
               </form>
@@ -100,7 +128,9 @@
     <script>
         let uNinput = document.getElementById("userName");
         let shNinput = document.getElementById("shippingName");
-        
+        let billNinput = document.getElementById("billingName");
+        let checkNinput = document.getElementById("flexCheckDefault");
+
         uNinput.addEventListener("blur", function(){
             if(this.value != ""){
             shNinput.value = this.value;
@@ -108,6 +138,13 @@
         else{
             alert("Please fill in  your name!")   
         }
+
+        checkNinput.addEventListener("click", function(){
+            if(this.value != ""){
+            
+            })
+            
+        })
     })
 
     </script>
