@@ -49,6 +49,7 @@ input {
 
 .form-control {
     border-radius: 0rem !important;
+    color: white !important;
 }
 
 .form-check-input {
