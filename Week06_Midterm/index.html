@@ -65,26 +65,69 @@
 
     <main>
 
-        <!--Jumbotron-->
+        <!--Carousel START-->
 
-        <section class="py-5 container-fluid jumbotron"
-            style="background-image: url(../Week04_HW/Images/jumbotron.jpg)" class="img-fluid">
-            <div class="row py-lg-5">
-                <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light text-sm-start text-md-center">The Latest Collection</h1>
-                    <p class="text-muted text-sm-start text-md-center">Star stuff harvesting star light concept of the
-                        number one laws of physics.</p>
-                    <p>
-                        <a href="#"
-                            class="btn btn-dark my-2 d-sm-flex  justify-content-sm-start d-md-flex justify-content-md-center">Check
-                            It Out</a>
-                    </p>
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-            </div>
-        </section>
 
+                <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="Images/carousel01.png" class="carousel" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+            
+                    <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Example headline.</h1>
+                        <p>Some representative placeholder content for the first slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-custom2" href="#">Sign up today</a></p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="Images/carousel02.jpeg" class="carousel" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>
+            
+                    <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Some representative placeholder content for the second slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-custom2" href="#">Learn more</a></p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="Images/carousel03.jpeg" class="carousel" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>
+            
+                    <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>One more for good measure.</h1>
+                        <p>Some representative placeholder content for the third slide of this carousel.</p>
+                        <p><a class="btn btn-lg btn-custom2" href="#">Browse gallery</a></p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!--Carousel END-->
 
         <!--card  .container START-->
+        
         <div class="album py-5 bg-light">
 
         <div class="container">
@@ -153,11 +196,6 @@
                     </div>
                 </div>
 
-
-
-
-
-
             </div>
 
         </div>
@@ -218,6 +256,7 @@
 
 
     <footer>
+    
 
     </footer>
 

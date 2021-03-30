@@ -81,3 +81,12 @@ body{
     background-color: black!important;
     color: white!important;
   }
+
+  .btn-custom2 {
+    background-color: #F20505 !important;
+    color:white;
+}
+
+  .carousel {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
