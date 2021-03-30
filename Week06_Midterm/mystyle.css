@@ -1,5 +1,5 @@
 .red{
-    color:red !important;
+    color:#ff0000 !important;
     font-weight: bolder;
 }
 
@@ -24,11 +24,15 @@ body{
 }
 
 .logo {
-    height: 50px;
+    height: 100px;
 }
 
 .navbar-toggler-icon{
     color: 1px solid white !important;
+}
+
+.bg-dark {
+  background-color: black !important;
 }
 
 .jumbotron {
