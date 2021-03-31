@@ -24,7 +24,7 @@ body{
 }
 
 .logo {
-    height: 100px;
+    height: 50px;
 }
 
 .navbar-toggler-icon{
@@ -65,6 +65,40 @@ body{
     font-family: 'Space Grotesk', sans-serif !important;
   }
 
+  /* carousel */
+
+  .carousel {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 300px !important;
+  }
+
+  .carousel-caption h1 {
+    font-size: calc(2.375rem + 1.5vw) !important;
+
+  }
+
+  .black {
+    color: black !important;
+    font-weight:bolder !important;
+    font-size: calc(2.375rem + 1.5vw) !important;
+  }
+
+  .btn-black {
+    background-color: black !important;
+    color: white !important;
+  }
+
+  p {
+    font-family: 'Source Code Pro', monospace;
+  }
+
+ 
+
+
+
+
+  /* blog post */
+
   .blog-post{
     padding-top: 4em;
   }
@@ -91,6 +125,29 @@ body{
     color:white;
 }
 
-  .carousel {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
+  
+
+
+
+/* color */
+
+/* Color Theme Swatches in Hex */
+.Abstract-red-and-black-background-1-hex { color: #F20505; }
+.Abstract-red-and-black-background-2-hex { color: #8C0303; }
+.Abstract-red-and-black-background-3-hex { color: #590202; }
+.Abstract-red-and-black-background-4-hex { color: #737373; }
+.Abstract-red-and-black-background-5-hex { color: #262626; }
+
+/* Color Theme Swatches in RGBA */
+.Abstract-red-and-black-background-1-rgba { color: rgba(242, 4, 4, 1); }
+.Abstract-red-and-black-background-2-rgba { color: rgba(140, 2, 2, 1); }
+.Abstract-red-and-black-background-3-rgba { color: rgba(89, 1, 1, 1); }
+.Abstract-red-and-black-background-4-rgba { color: rgba(114, 114, 114, 1); }
+.Abstract-red-and-black-background-5-rgba { color: rgba(38, 38, 38, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Abstract-red-and-black-background-1-hsla { color: hsla(0, 96, 48, 1); }
+.Abstract-red-and-black-background-2-hsla { color: hsla(0, 96, 28, 1); }
+.Abstract-red-and-black-background-3-hsla { color: hsla(0, 96, 17, 1); }
+.Abstract-red-and-black-background-4-hsla { color: hsla(0, 0, 45, 1); }
+.Abstract-red-and-black-background-5-hsla { color: hsla(0, 0, 15, 1); }
