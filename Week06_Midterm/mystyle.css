@@ -35,6 +35,18 @@ body{
   background-color: black !important;
 }
 
+/* card heading and section */
+
+.topPicks {
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+.red {
+  color:red;
+}
+
+
 .jumbotron {
     background-position: center center !important;
     background-size: cover !important;
@@ -57,11 +69,10 @@ body{
   }
 
   .card-title {
-    margin-bottom: .5rem;
-    font-size: 5.3rem;
-    margin-top: -45px;
-    color: red;
-    font-weight: 700;
+    margin-bottom: .5rem !important;
+    font-size: 2.5rem !important;
+    margin-top: -45px !important;
+    font-weight: 700 !important;
     font-family: 'Space Grotesk', sans-serif !important;
   }
 
@@ -73,7 +84,7 @@ body{
   }
 
   .carousel-caption h1 {
-    font-size: calc(2.375rem + 1.5vw) !important;
+    font-size: calc(1.5rem + 1.5vw) !important;
 
   }
 
@@ -89,7 +100,16 @@ body{
   }
 
   p {
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Source Code Pro', monospace !important;
+  }
+
+  .btntext {
+    text-transform: uppercase;
+    font-weight:bolder;
+  }
+
+  .carouselpblack{
+    color: black !important;
   }
 
  
@@ -137,6 +157,7 @@ body{
 .Abstract-red-and-black-background-3-hex { color: #590202; }
 .Abstract-red-and-black-background-4-hex { color: #737373; }
 .Abstract-red-and-black-background-5-hex { color: #262626; }
+{.purplecolor: #500356;}
 
 /* Color Theme Swatches in RGBA */
 .Abstract-red-and-black-background-1-rgba { color: rgba(242, 4, 4, 1); }
