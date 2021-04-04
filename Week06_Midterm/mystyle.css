@@ -76,6 +76,27 @@ body{
     font-family: 'Space Grotesk', sans-serif !important;
   }
 
+
+  /* modal */
+  .modal-header {
+    background-color: black !important;
+    color: white !important;
+  }
+
+  .red-modal {
+    color:red !important;
+  }
+
+  .form-control {
+    background-color: black !important;
+    color: white !important;
+  }
+
+  .btn-green {
+    background-color: #10F925 !important;
+    color: black !important;
+  }
+
   /* carousel */
 
   .carousel {
