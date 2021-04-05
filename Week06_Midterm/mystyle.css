@@ -79,6 +79,10 @@ body{
 
 
   /* modal */
+
+  .btn-close{
+    background-color: white !important;
+  }
   .modal-header {
     background-color: black !important;
     color: white !important;
@@ -96,6 +100,18 @@ body{
   .btn-green {
     background-color: #10F925 !important;
     color: black !important;
+  }
+
+  .form-check-input:checked {
+    background-color: red !important;
+    border-color:red !important;
+  }
+
+
+  
+
+  .margin{
+    margin-top: 10px !important;
   }
 
   /* carousel */
