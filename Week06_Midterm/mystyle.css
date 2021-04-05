@@ -3,16 +3,17 @@ font-family: 'Space Grotesk', sans-serif; */
 
 /* colors green: #10F925  purple: #500356 */
 
+/* containers + universal css */
+
 .container, .container-lg, .container-md, .container-sm {
     max-width: 100%;
 
 }
 
-
-
-body{
-    font-family: 'Space Grotesk', sans-serif;
+.red {
+  color:red;
 }
+
 /* Nav Bar */
 
 .navbar-toggler {
@@ -44,95 +45,19 @@ body{
   text-decoration: none !important;
 }
 
+/* Footer */
 
-/* card heading and section */
-
-.topPicks {
-  font-size: 3.5rem;
-  font-weight: bolder;
+ .footer {
+  background-color: black !important;
+  color: white !important;
 }
 
-.red {
-  color:red;
-}
-
-/* About Page */
-
-.jumbotron {
-    background-position: center center !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    min-height: 400px !important;
-  }
-
-  .text-large{
-    font-size: calc(1.125rem + 3.3vw) !important;
-    font-family: 'Space Grotesk', sans-serif !important;
-    font-weight: 500 !important;
-  }
-
-  .fw-light {
-    font-weight: 700!important;
-    color: white !important;
-  }
-
-  .text-muted {
-      color: darkgrey !important;
-      font-size: 1rem !important;
-      font-weight:lighter !important;
-  }
-
-  .lead {
-    font-size: 2.5rem !important;
-    font-family: 'Major Mono Display', monospace !important;
-  }
-
-  .card-title {
-    margin-bottom: .5rem !important;
-    font-size: 2.5rem !important;
-    margin-top: -45px !important;
-    font-weight: 700 !important;
-    font-family: 'Space Grotesk', sans-serif !important;
-  }
+/* ------- Index. HTML -------- */
 
 
-  /* modal */
+/* Home Page */
 
-  .btn-close{
-    background-color: white !important;
-  }
-  .modal-header {
-    background-color: black !important;
-    color: white !important;
-  }
-
-  .red-modal {
-    color:red !important;
-  }
-
-  .form-control {
-    background-color: black !important;
-    color: white !important;
-  }
-
-  .btn-green {
-    background-color: #10F925 !important;
-    color: black !important;
-  }
-
-  .form-check-input:checked {
-    background-color: red !important;
-    border-color:red !important;
-  }
-
-
-  
-
-  .margin{
-    margin-top: 10px !important;
-  }
-
-  /* carousel */
+  /* Carousel */
 
   .carousel {
     background-color: rgba(0, 0, 0, 0.3);
@@ -174,47 +99,128 @@ body{
     text-transform: uppercase !important;
   }
 
-
-
   p {
     font-family: 'Source Code Pro', monospace !important;
   }
-
 
   .carouselpblack{
     color: black !important;
   }
 
-/* features with icons */
+/* Heading */
 
-  .bgpurple {
-    background-color: #500356 !important;
-    color:white !important;
+.topPicks {
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+/* Features w/ Icons */
+
+.bgpurple {
+  background-color: #500356 !important;
+  color:white !important;
+}
+
+.bgred {
+  background-color: red !important;
+  color: white !important;
+}
+
+.icon-heading {
+  color: black !important;
+}
+
+.pr{
+  margin-right: 5px !important;
+}
+
+ /* modal */
+
+ .btn-close{
+  background-color: white !important;
+}
+.modal-header {
+  background-color: black !important;
+  color: white !important;
+}
+
+.red-modal {
+  color:red !important;
+}
+
+.form-control {
+  background-color: black !important;
+  color: white !important;
+}
+
+.btn-green {
+  background-color: #10F925 !important;
+  color: black !important;
+}
+
+.form-check-input:checked {
+  background-color: red !important;
+  border-color:red !important;
+}
+
+.margin{
+  margin-top: 10px !important;
+}
+
+/* ------- About. HTML -------- */
+
+/* About Page */
+
+.jumbotron {
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    min-height: 400px !important;
   }
 
-  .bgred {
-    background-color: red !important;
+  .text-large{
+    font-size: calc(1.125rem + 3.3vw) !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 500 !important;
+  }
+
+  .fw-light {
+    font-weight: 700!important;
     color: white !important;
   }
 
-  .icon-heading {
-    color: black !important;
+  .text-muted {
+      color: darkgrey !important;
+      font-size: 1rem !important;
+      font-weight:lighter !important;
   }
 
-  .pr{
-    margin-right: 5px !important;
+  .lead {
+    font-size: 2.5rem !important;
+    font-family: 'Major Mono Display', monospace !important;
   }
 
-  /* footer */
-
-  .footer {
-    background-color: black !important;
-    color: white !important;
+  .card-title {
+    margin-bottom: .5rem !important;
+    font-size: 2.5rem !important;
+    margin-top: -45px !important;
+    font-weight: 700 !important;
+    font-family: 'Space Grotesk', sans-serif !important;
   }
 
 
+/* ------- Products. HTML -------- */
 
-  /* blog post */
+
+
+
+
+
+
+
+  /* ------- Team. HTML --------- */
+
+  /* Blog Post */
 
   .blog-post{
     padding-top: 4em;
