@@ -265,13 +265,9 @@ font-family: 'Space Grotesk', sans-serif; */
 
 /* ------- Products. HTML -------- */
 
-  .img-fluid{
-    max-width: 300px;
-  }
-
-  .mx-auto{
-    max-width: 100%;
-    margin-top: 10px;
+  .display-4{
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 700 !important;
   }
 
   /* ------- Team. HTML --------- */
