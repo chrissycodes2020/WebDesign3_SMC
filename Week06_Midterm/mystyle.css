@@ -11,7 +11,16 @@ font-family: 'Space Grotesk', sans-serif; */
 }
 
 .red {
-  color:red;
+  color:red !important;
+}
+
+.green { 
+  color:#10F925 !important;
+}
+
+.purple {
+  color: #500356 !important;
+
 }
 
 /* Nav Bar */
@@ -50,6 +59,7 @@ font-family: 'Space Grotesk', sans-serif; */
  .footer {
   background-color: black !important;
   color: white !important;
+  font-family: 'Source Code Pro', monospace !important;
 }
 
 /* ------- Index. HTML -------- */
@@ -114,6 +124,16 @@ font-family: 'Space Grotesk', sans-serif; */
   font-weight: bolder;
 }
 
+/* Card Section */
+
+.card-title {
+  margin-bottom: .5rem !important;
+  font-size: 2.5rem !important;
+  margin-top: -45px !important;
+  font-weight: 700 !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+}
+
 /* Features w/ Icons */
 
 .bgpurple {
@@ -171,6 +191,8 @@ font-family: 'Space Grotesk', sans-serif; */
 
 /* About Page */
 
+/* Jumbotron */
+
 .jumbotron {
     background-position: center center !important;
     background-size: cover !important;
@@ -184,39 +206,73 @@ font-family: 'Space Grotesk', sans-serif; */
     font-weight: 500 !important;
   }
 
-  .fw-light {
-    font-weight: 700!important;
-    color: white !important;
-  }
+  /* Featurettes */
 
   .text-muted {
       color: darkgrey !important;
       font-size: 1rem !important;
       font-weight:lighter !important;
   }
+ 
+ 
+  .lead {
+    font-family: 'Source Code Pro', monospace !important;
+    font-size: 1rem !important;
+    line-height: 35px;
+
+  }
+
+  .bgblack {
+    background-color: black !important;
+    color: white !important;
+  }
+
+  @media (min-width: 375px) {
+
+  .featurette-heading {
+    font-size: 2.5rem !important;
+    font-family: 'Space Grotesk'!important;
+  }
 
   .lead {
-    font-size: 2.5rem !important;
-    font-family: 'Major Mono Display', monospace !important;
+    font-family: 'Source Code Pro', monospace !important;
+    font-size: 1rem !important;
+    line-height: 35px;
+
   }
 
-  .card-title {
-    margin-bottom: .5rem !important;
-    font-size: 2.5rem !important;
-    margin-top: -45px !important;
-    font-weight: 700 !important;
-    font-family: 'Space Grotesk', sans-serif !important;
   }
+
+  @media (min-width: 776px) {
+    .lead {
+      font-family: 'Source Code Pro', monospace !important;
+      font-size: 1.5rem !important;
+      line-height: 55px !important;
+
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .featurette-heading {
+      font-size: 3.75rem !important;
+      font-family: 'Space Grotesk'!important;
+    }
+  }
+
+
+
 
 
 /* ------- Products. HTML -------- */
 
+  .img-fluid{
+    max-width: 300px;
+  }
 
-
-
-
-
-
+  .mx-auto{
+    max-width: 100%;
+    margin-top: 10px;
+  }
 
   /* ------- Team. HTML --------- */
 
