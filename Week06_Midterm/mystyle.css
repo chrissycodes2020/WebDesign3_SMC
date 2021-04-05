@@ -1,7 +1,7 @@
-.red{
-    color:#ff0000 !important;
-    font-weight: bolder;
-}
+/* font families font-family: 'Source Code Pro', monospace;
+font-family: 'Space Grotesk', sans-serif; */
+
+/* colors green: #10F925  purple: #500356 */
 
 .container, .container-lg, .container-md, .container-sm {
     max-width: 100%;
@@ -13,18 +13,19 @@
 body{
     font-family: 'Space Grotesk', sans-serif;
 }
+/* Nav Bar */
 
 .navbar-toggler {
     padding: .25rem .75rem;
     font-size: 1.25rem;
-    line-height: 3;
+    line-height: 2;
     border: 3px solid white !important;
     border-radius: .25rem;
     transition: box-shadow .15s ease-in-out;
 }
 
 .logo {
-    height: 50px;
+    height: 40px;
 }
 
 .navbar-toggler-icon{
@@ -109,32 +110,62 @@ body{
 
   }
 
-  .black {
+  .blackspan {
     color: black !important;
     font-weight:bolder !important;
-    font-size: calc(2.375rem + 1.5vw) !important;
+
+  }
+
+  .greenspan{
+    color: #10F925 !important;
+  }
+
+  .purplespan{
+    color: #500356!important;
+  }
+
+  .greyspan{
+    color:#737373 !important;
+  }
+
+  .blacktext{
+    color:black !important;
   }
 
   .btn-black {
     background-color: black !important;
     color: white !important;
+    font-weight: 500 !important;
+    font-family: 'Source Code Pro' !important;
+    text-transform: uppercase !important;
   }
+
+
 
   p {
     font-family: 'Source Code Pro', monospace !important;
   }
 
-  .btntext {
-    text-transform: uppercase;
-    font-weight:bolder;
-  }
 
   .carouselpblack{
     color: black !important;
   }
 
- 
+/* features with icons */
 
+  .bgpurple {
+    background-color: #500356 !important;
+    color:white !important;
+  }
+
+  .bgred {
+    background-color: red !important;
+    color: white !important;
+  }
+
+  .icon-heading {
+    color: black !important;
+  }
 
 
 
