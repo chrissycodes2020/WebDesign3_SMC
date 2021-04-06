@@ -323,6 +323,10 @@ font-family: 'Space Grotesk', sans-serif; */
     background-color: black!important;
   }
 
+  .product-heading {
+    font-family: 'Space Grotesk', sans-serif !important;
+  }
+
   /* ------- Team. HTML --------- */
 
   .blog-post-title {
