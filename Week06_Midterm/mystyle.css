@@ -325,6 +325,11 @@ font-family: 'Space Grotesk', sans-serif; */
 
   /* ------- Team. HTML --------- */
 
+  .blog-post-title {
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-style: italic !important;
+  }
+
   .text-jumbo{
     font-size:6rem !important;
     padding-left: 45px !important;
