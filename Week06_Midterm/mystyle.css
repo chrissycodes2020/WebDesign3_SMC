@@ -327,6 +327,15 @@ font-family: 'Space Grotesk', sans-serif; */
     font-family: 'Space Grotesk', sans-serif !important;
   }
 
+  .btntext {
+    font-family: 'Source Code Pro', monospace !important;
+    color: #10F925 !important;
+  }
+
+  .accordion-button {
+    color: #10F925 !important;
+  }
+
   /* ------- Team. HTML --------- */
 
   .blog-post-title {
