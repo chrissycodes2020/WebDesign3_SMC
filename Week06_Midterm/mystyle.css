@@ -18,9 +18,27 @@ font-family: 'Space Grotesk', sans-serif; */
   color:#10F925 !important;
 }
 
-.purple {
-  color: #500356 !important;
+.yellow {
+  color: #F6FC00 !important;
+}
 
+.purple {
+  color: #ED24E4 !important;
+}
+
+.lightblue {
+  color: #61FBFF !important;
+}
+
+.darkblue{
+  color: #0000D8 !important;
+
+}
+
+
+
+.black {
+  color:black !important;
 }
 
 /* Nav Bar */
@@ -117,6 +135,28 @@ font-family: 'Space Grotesk', sans-serif; */
     color: black !important;
   }
 
+.btn-darkblue {
+  background-color: #0000D8 !important;
+  color: white !important;
+}
+
+.btn-yellow {
+  background-color: #F6FC00 !important;
+}
+
+.btn-lightblue {
+  background-color: #61FBFF !important;
+}
+
+.btn-purple {
+  background-color: #ED24E4 !important;
+  color: white !important;
+}
+
+.btn-red {
+  background-color: red !important;
+  color:white !important;
+}
 /* Heading */
 
 .topPicks {
@@ -148,6 +188,11 @@ font-family: 'Space Grotesk', sans-serif; */
 
 .icon-heading {
   color: black !important;
+}
+
+.bgyellow {
+  background-color: #F6FC00 !important;
+
 }
 
 .pr{
@@ -268,6 +313,14 @@ font-family: 'Space Grotesk', sans-serif; */
   .display-4{
     font-family: 'Space Grotesk', sans-serif !important;
     font-weight: 700 !important;
+  }
+
+  .btn-align{
+    text-align:left !important;
+  }
+
+  .bg-black {
+    background-color: black!important;
   }
 
   /* ------- Team. HTML --------- */
