@@ -325,6 +325,21 @@ font-family: 'Space Grotesk', sans-serif; */
 
   /* ------- Team. HTML --------- */
 
+  .text-jumbo{
+    font-size:6rem !important;
+    padding-left: 45px !important;
+    color:white !important;
+  }
+
+  @media (min-width: 1200px) {
+    .text-jumbo{
+      font-size: 11rem !important;
+    padding-left: 376px !important;
+    }
+  }
+
+
+
   /* Blog Post */
 
   .blog-post{
