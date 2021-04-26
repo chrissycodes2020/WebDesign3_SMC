@@ -41,6 +41,14 @@ header {
     color:lightpink;
 }
 
+.rotate:hover {
+    transform: rotate(90deg);
+}
+
+.logo:hover {
+    transform: rotate(180deg);
+}
+
 button {
     padding: 9px 25px;
     background-color: rgba(235,68,84,1);
@@ -53,4 +61,5 @@ button {
 
 button:hover {
     background-color: rgba(235,68,84,0.5);
+    transform: rotate(-45deg);
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transition Examples</title>
+    <title>Transform-Transition Examples</title>
 
     <style>
 
@@ -12,62 +12,69 @@
             margin: 0px;
         }
 
-        section div {
+        section div{
             height: 300px;
-            width: 300px;
+            width:300px;
         }
 
-        .translate, .rotate, .scale{
-            position: relative;
+        .translate, 
+        .rotate, 
+        .scale {
+            position:relative;
         }
 
-        .translate div {
-            background-color: rgba(255,0,0, .2);
+       .rotate{
+           top: 500px;
+
             
         }
 
-        .rotate div {
-            background-color: rgba(0,255,0 .2);
+        .scale{
+            top: 1000px;
+            left: 100px;
+        }
+
+       .translate div {
+        background-color: rgba(0, 0, 255, .3);
+
+       }
+
+        .rotate div{
+            background-color: rgba(0,255,0,.3);
+
         }
 
         .scale div {
-            background-color: rgba(0, 0, 255, .2);
+            background-color: rgba(0,255,0,.3);
         }
-
-        .rotate {
-            top: 500px;
-
-        }
-
-        scale {
-            top: 1000px;
-        }
-
-        .original, .translated, .rotated, .scaled {
+        
+        .original, 
+        .translated, 
+        .rotated, 
+        .scaled {
             position: absolute;
-            top:0;
+            top: 0;
             left: 0;
-            background-color: rgba(255,0,0, .2);
         }
 
         .translated {
-            transform:translate(50px,100px);
+            transform:translate(50px, 100px)
         }
 
         .rotated {
-            transform: rotate(45deg)
+            transform: rotate(45deg);
         }
 
         .scaled {
-            transform: scale(20%, 150%);
+            transform: scale(120%, 150%);
         }
 
+       
         /* styles for the transition */
 
         ul {
             list-style: none;
             padding-left: 0px;
-
         }
 
         ul li {
@@ -75,71 +82,65 @@
             padding: 5px 20px;
             background-color: transparent;
             transition: 1400ms;
-            border-bottom: 2px solid transparent;
-
+            border-bottom: 3px solid transparent;
         }
 
         ul li:hover {
+            background-color: rgba(255, 0, 255, 0.5); 
             transition: 1400ms;
-            background-color: rgba(255, 0, 255, .5);
-            border-bottom: 2px solid black;
+            border-bottom: solid black 3px;
         }
 
-        a {
-            text-decoration: none;
-            color: black;
+        a{
+            text-decoration:none;
+            color:black;
+            font-weight: 600;
             text-transform: uppercase;
         }
 
     </style>
 </head>
 <body>
-
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Navlink</a></li>
-            </ul>
-        </nav>
+       <nav>
+           <ul>
+               <li><a href="#">NavLink</a></li>
+           </ul>
+       </nav> 
+
     </header>
 
     <section class="translate">
+
         <div class="original">
-            <p>Hello, world!</p>
-
+            <p>Hello there!</p>
         </div>
-
         <div class="translated">
-            <p>Hello, world!</p>
-
+            <p>Goodbye there!</p>
         </div>
+
     </section>
 
     <section class="rotate">
+
         <div class="original">
-            <p>Hello, world!</p>
-
+            <p>Hello there!</p>
         </div>
-
-        <div class="rotatated">
-            <p>Hello, world!</p>
-
+        <div class="rotated">
+            <p>Goodbye there!</p>
         </div>
 
     </section>
 
     <section class="scale">
+
         <div class="original">
-            <p>Hello, world!</p>
-
+            <p>Hello there!</p>
         </div>
-
         <div class="scaled">
-            <p>Hello, world!</p>
-
+            <p>Goodbye there!</p>
         </div>
 
     </section>
-    
 </body>
 </html>
