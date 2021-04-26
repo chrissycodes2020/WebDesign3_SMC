@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+li, a, button {
+    font-family: 'Zen Dots', cursive;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 30px 10%;
+    background-image: linear-gradient(90deg, rgba(215,58,54,1) 0%, rgba(247,95,72,1) 32%, rgba(249,133,110,1) 66%, rgba(255,191,168,1) 100%);
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all .3s ease 0s;
+    color:black;
+}
+
+.nav-links li a:hover {
+    color:lightpink;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(235,68,84,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+
+}
+
+button:hover {
+    background-color: rgba(235,68,84,0.5);
+}
