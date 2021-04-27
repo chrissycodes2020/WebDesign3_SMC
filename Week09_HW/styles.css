@@ -16,10 +16,10 @@ header {
     justify-content: space-between;
     align-items:center;
     padding: 30px 10%;
-    background-image: linear-gradient(90deg, rgba(215,58,54,1) 0%, rgba(247,95,72,1) 32%, rgba(249,133,110,1) 66%, rgba(255,191,168,1) 100%);
+    background-image: radial-gradient(circle, rgba(91,90,140,1) 0%, rgba(85,155,217,1) 20%, rgba(242,211,172,1) 65%, rgba(242,187,155,1) 81%, rgba(217,167,156,1) 100%);
 }
 
-.logo{
+.goat-logo{
     cursor: pointer;
 }
 
@@ -39,27 +39,175 @@ header {
 
 .nav-links li a:hover {
     color:lightpink;
+    transition: 1400ms;
 }
 
 .rotate:hover {
     transform: rotate(90deg);
+    transition: 1400ms;
 }
 
-.logo:hover {
+.goat-logo:hover {
     transform: rotate(180deg);
+    transition: 1400ms;
 }
 
 button {
     padding: 9px 25px;
-    background-color: rgba(235,68,84,1);
+    background-color: rgb(0, 0, 0);
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all .3s ease 0s;
+    color:white;
+    transition: 1400ms;
 
 }
 
 button:hover {
-    background-color: rgba(235,68,84,0.5);
+    background-color: rgba(0,0,0,0.5);
     transform: rotate(-45deg);
+    transition: 1400ms;
+}
+
+/* images */
+
+.row-1 {
+    display: flex;
+    justify-content: center;
+    margin-top:10px;
+    position:relative;
+    max-width: 1280px;
+}
+
+.size1 {
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left:10px;
+}
+
+.size2 {
+    max-width:1000px;
+    max-height: 600px;
+    padding-right: 10px;
+    padding-left:10px;
+}
+
+.size3 {
+    max-width: 400px;
+    padding-right: 10px;
+    padding-left:10px;
+
+}
+.size4 {
+    max-width: 400px;
+}
+
+.transform1 {
+    position:absolute;
+    top: 150px;
+    left:400px;
+    transform: rotate(90deg);
+    transition: 1400ms;
+}
+
+.transform1:hover {
+    transform: rotate(0deg);
+    transition: 1400ms;
+}
+
+
+.transform2 {
+    position: absolute;
+    top: 50px;
+    transform:translate(-100px, -30px);
+    transition: 1400ms;
+}
+
+.transform2:hover {
+    transform: rotate(180deg);
+    transition: 1400ms;
+}
+
+.transform3 {
+    position: absolute;
+    transform:translate(550px, 100px);
+}
+
+
+
+
+.row-2{
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+    position:relative;
+    max-width: 1280px;
+}
+
+.transform4{
+    position:absolute;
+    top:300px;
+    transform:translate(-300px, 300px)
+}
+
+.transform5{
+    position:absolute;
+    top:1050px;
+    transform: rotate(-90deg);
+    
+}
+
+.transform5:hover{
+    transform:translate(0px, -300px);
+    transition: 1400ms;
+
+}
+
+.transform6{
+    position:absolute;
+    top: 550px;
+    transform:translate(416px, 0px);
+    transition: 1400ms;
+
+}
+
+.transform6:hover{
+    transform: translate(100px, 100px);
+    transition: 1400ms;
+
+}
+
+.row-3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+    max-width: 1280px;
+
+}
+
+.transform7{
+    position:absolute;
+    top:1050px;
+    transform:translate(-300px, 379px);
+}
+
+.transform8{
+    position:absolute;
+    top: 1050px;
+    transform:translate(418px, 76px);
+}
+
+.transform9{
+    position:absolute;
+    top: 1202px;
+    transform:translate(0px, 50px);
+    transition: 1400ms;
+}
+
+.transform9:hover {
+    transform:translate(300px, 376px);
+    transition: 1400ms;
+
 }
