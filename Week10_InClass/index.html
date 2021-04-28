@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+</head>
+
+<style>
+    [class^="strip"] {
+    width: 100vw;
+    height: 25vh;
+    position: absolute;
+    }
+    
+    body{
+        margin:0px;
+        overflow: hidden;
+    }
+
+    .strip1 {
+        background-color: hsl(45,100%,50%);
+        top: 0;
+        animation-name: moveToLeft;
+        animation-duration: 3s;
+
+    }
+
+    .strip2 {
+        background-color: hsl(105,100%,50%);
+        top: 25vh;
+        left: -100%;
+        animation-name: moveToRight;
+        animation-duration: 3s;
+        animation-delay: 1s;
+    }
+
+    .strip3 {
+        background-color: hsl(195,100%,50%);
+        top: 50vh;
+        animation-name: moveToLeft;
+        animation-duration: 3s;
+        
+    }
+
+    .strip4 {
+        background-color: hsl(265,100%,50%);
+        top: 75vh;
+        animation-name: moveToRight;
+        animation-duration: 3s;
+        
+    }
+
+    /* ONLY START AND END: */
+
+    @keyframes moveToLeft{
+        from{right: -100%;}
+        to{right: 100%;}
+
+    }
+
+    /* CAN DEFINE INTERMEDIATE KEYFRAMES */
+
+    @keyframes moveToRight {
+        from {left: -100%;}
+        to {left: 0;}
+    }
+
+</style>
+
+
+<body>
+
+    <div class="strip1"></div>
+    <div class="strip2"></div>
+    <div class="strip3"></div>
+    <div class="strip4"></div>
+    
+</body>
+</html>
