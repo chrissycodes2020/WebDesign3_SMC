@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Animations</title>
-</head>
 
 <style>
     [class^="strip"] {
@@ -17,6 +16,7 @@
     body{
         margin:0px;
         overflow: hidden;
+        animation: colorChange 5s both;
     }
 
     .strip1 {
@@ -32,15 +32,17 @@
         top: 25vh;
         left: -100%;
         animation-name: moveToRight;
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-delay: 1s;
+        animation-fill-mode: forwards;
+       
     }
 
     .strip3 {
         background-color: hsl(195,100%,50%);
         top: 50vh;
         animation-name: moveToLeft;
-        animation-duration: 3s;
+        animation-duration: 4s;
         
     }
 
@@ -48,34 +50,102 @@
         background-color: hsl(265,100%,50%);
         top: 75vh;
         animation-name: moveToRight;
-        animation-duration: 3s;
+        animation-duration: 4s;
         
+    }
+
+    .circle {
+        border-radius: 50%;
+        width: 0vw;
+        height: 0vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        background-color: hsl(0, 100%, 50%);
+        animation-name: circleAnim;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    main {
+        width: 50vw;
+        margin: 30vh auto 0;
+        position: relative;
+        z-index: 1001;
+        animation: mainAnim 4s 2s both;
+  
     }
 
     /* ONLY START AND END: */
 
     @keyframes moveToLeft{
-        from{right: -100%;}
-        to{right: 100%;}
+        from{
+            right: -100%;
+
+        /* Some other paremeters here */
+
+    }
+
+        to {right: 0%;}
 
     }
 
     /* CAN DEFINE INTERMEDIATE KEYFRAMES */
 
     @keyframes moveToRight {
-        from {left: -100%;}
-        to {left: 0;}
+        0% {left: -100%;}
+        /* could add more keyframes here */
+        100% {left: 0;}
+    }
+
+    @keyframes colorChange {
+        0% {background-color: hsl(0,100%,100%);
+        }
+
+        50% {background-color: hsl(0, 50%, 50%);
+        }
+
+        100% {background-color: hsl(0, 100%, 50%);
+        }
+    }
+
+    @keyframes circleAnim {
+        0%{
+            width: max (1vw, 1vh);
+            height: max (1vw, 1vh);
+        }
+
+        100% {
+            width: max(200vw, 200vh);
+            height: max(200vw, 200vh);
+        }
+    }
+
+    @keyframes mainAnim {
+        from { opacity: 0;}
+        to{ opacity: 1;}
+
     }
 
 </style>
 
+</head>
+
 
 <body>
-
+    <div class="circle"></div>
     <div class="strip1"></div>
     <div class="strip2"></div>
     <div class="strip3"></div>
     <div class="strip4"></div>
+
+    <main>
+        <h1>Hello, animations</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi at maiores ab? Rerum et odit velit impedit reprehenderit eaque eum corrupti similique ducimus beatae, deserunt omnis! Et error fugit voluptates?</p>
+    </main>
     
 </body>
 </html>
