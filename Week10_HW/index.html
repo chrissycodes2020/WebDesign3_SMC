@@ -5,8 +5,289 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animate Animatables</title>
+
+    <style>
+        
+    body{
+    margin:0px;
+    overflow: hidden;
+    animation: colorChange 5s both;
+    background-color: black;
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    }
+
+    p{
+    
+        padding:none;
+    }
+
+    .boldupper{
+        text-transform: uppercase;
+        font-style: italic;
+        font-weight: 700;
+        color:hsl(113, 100%, 50%);
+
+    }
+
+    .sect01{
+    max-width: 20%;
+    margin-left: auto;
+    margin-right:auto;
+    }
+
+
+    .word01,
+    .word02,
+    .word03,
+    .word04,
+    .word05,
+    .word06 {
+    width: 25vw;
+    height: 25vh;
+    position: absolute;
+    color: white;
+    }
+
+    .word01 {
+    top: 0;
+    animation-name: moveDown;
+    animation-duration: 5s;
+    text-align: right;
+    font-size: 50px;
+    }
+
+    .word02 {
+    top: 10vh;
+    animation-name: moveDown;
+    animation-duration: 5s;
+    text-align: right;
+    font-size: 50px;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+
+    }
+
+    .word03 {
+    top: 18vh;
+    animation-name: moveDown;
+    animation-duration: 5s;
+    text-align: right;
+    font-size: 50px;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+
+    }
+
+    .word04 {
+    top: 33vh;
+    animation-name: moveDown;
+    animation-duration: 5s;
+    text-align: right;
+    font-size: 50px;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+    }
+
+    .word05 {
+    top: 47vh;
+    animation-name: moveDown;
+    animation-duration: 5s;
+    text-align: right;
+    font-size: 50px;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+
+    }
+
+    .word06 {
+    top: 55vh;
+    animation-name: moveDown;
+    animation-duration: 5s;
+    text-align: right;
+    font-size: 50px;
+    animation-delay: 6s;
+    animation-fill-mode: both;
+
+    }
+
+    #triangle-up {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid blue;
+      position: absolute;
+      top: 10vh;
+      left: 5vw;
+      transform: rotate(-90deg);
+      animation-name: moveDown;
+      animation-duration: 3s;
+      animation-delay: 1s;
+      animation-fill-mode: both;
+    }
+
+    #triangle-upTop {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid lightblue;
+      position: absolute;
+      top: 7vh;
+      left: 7vw;
+      animation-name: moveDown;
+      animation-duration: 3s;
+      animation-delay: 2s;
+      animation-fill-mode: both;
+    }
+
+    #triangle-up2 {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid lightblue;
+      position: absolute;
+      top: 20vh;
+      left: 20vw;
+      transform: rotate(90deg);
+      animation-name: moveDown;
+      animation-duration: 3s;
+      animation-delay: 3s;
+      animation-fill-mode: both;
+    }
+
+    #triangle-up2Top {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid blue;
+      position: absolute;
+      top: 18vh;
+      left: 18vw;
+      animation-name: moveDown;
+      animation-duration: 8s;
+      animation-delay: 4s;
+      animation-fill-mode: both;
+    }
+
+    #triangle-up3 {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid blue;
+      position: absolute;
+      top: 40vh;
+      left: 9vw;
+      transform: rotate(45deg);
+      animation-name: moveDown;
+      animation-duration: 8s;
+      animation-delay: 5s;
+      animation-fill-mode: both;
+    }
+
+    #triangle-up3Top {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid lightblue;
+      position: absolute;
+      top: 40vh;
+      left: 9vw;
+      animation-name: moveDown;
+      animation-duration: 8s;
+      animation-delay: 6s;
+      animation-fill-mode: both;
+    }
+
+    #triangle-up4 {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid lightblue;
+      position: absolute;
+      top: 60vh;
+      left: 25vw;
+      transform: rotate(-45deg);
+      animation-name: moveDown;
+      animation-duration: 8s;
+      animation-delay: 7s;
+      animation-fill-mode: both;
+    }
+
+    #triangle-up4Top {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid blue;
+      position: absolute;
+      top: 60vh;
+      left: 25vw;
+      animation-name: moveDown;
+      animation-duration: 8s;
+      animation-delay: 8s;
+      animation-fill-mode: both;
+    }
+
+    @keyframes moveDown {
+        0% {top: -100%;}
+        /* could add more keyframes here */
+        100% {bottom: 0;}
+    }
+
+    @keyframes colorChange {
+        0% {background-color: hsl(187, 100%, 52%);
+        }
+
+        50% {background-color: hsl(194, 100%, 50%);
+        }
+
+        70% {background-color: hsl(113, 100%, 50%);
+        }
+
+        100% {background-color: hsl(0, 0%, 0%);
+        }
+    }
+
+    @keyframes typeColorChange {
+        0% {color:hsl(0, 0%, 100%);
+        }
+        
+        100% {color:hsl(113, 100%, 50%);
+        }
+    }
+
+    </style>
 </head>
 <body>
+    <section class="sect01">
+    <div class="word01"><h1>I often</h1></div>
+    <div class="word02"><p>think that</p></div>
+    <div class="word03"><p>the night is more<span class="boldupper"> alive</span></p></div>
+    <div class="word04"><p>and more richly<span class="boldupper"> colored</span></p></div>
+    <div class="word05"><p>than the day</p></div>
+    <div class="word06"><h1>-Vincent Van Gogh</h1></div>
+    <div id="triangle-up"></div>
+    <div id="triangle-upTop"></div>
+    <div id="triangle-up2"></div>
+    <div id="triangle-up2Top"></div>
+    <div id="triangle-up3"></div>
+    <div id="triangle-up3Top"></div>
+    <div id="triangle-up4"></div>
+    <div id="triangle-up4Top"></div>
+    </section>
+
+    
+
+    </section>
     
 </body>
 </html>
