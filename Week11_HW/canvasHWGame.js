@@ -1,8 +1,8 @@
-const canvas2 = document.getElementById("myGame");
-const ctx = canvas2.getContext('2d');
+const canvas = document.getElementById("myGame");
+const ctx = canvas.getContext('2d');
 
-    let cWidth = canvas2.width;
-    let cHeight = canvas2.height;
+    let cWidth = canvas.width;
+    let cHeight = canvas.height;
 
     let cPosX = cWidth/2; //horizontal center
     let cPosY = cHeight/2; //vertical center
@@ -19,8 +19,8 @@ const ctx = canvas2.getContext('2d');
     function drawFrame(){
         ctx.clearRect(0, 0, cWidth, cHeight);
 
-        ctx.fillStyle = "teal";
-        ctx.strokeStyle = "darkorange";
+        ctx.fillStyle = "yellow";
+        ctx.strokeStyle = "green";
     
         ctx.beginPath();
         ctx.arc(cPosX, cPosY, cRadius, 0, Math.PI*2);
@@ -45,8 +45,8 @@ const ctx = canvas2.getContext('2d');
 
     drawFrame();
 
-    canvas2.addEventListener("click", function(event){
-        console.log(event);
+    canvas.addEventListener("click", function(event){
+        //console.log(event);
         let mouseXp = event.pageX - event.target.offsetLeft;
         let mouseYp = event.pageY - event.target.offsetTop;
 
@@ -60,8 +60,22 @@ const ctx = canvas2.getContext('2d');
             cVelX = cVelX * 1.5;
             cVelY = cVelY * 1.5;
         }
-
-        
     })
+
+    function changeColor () {
+        var canvas = document.getElementById("myGame");
+        canvas.style.backgroundColor = "blue";
+    }
+
+        //new code
+
+    let count = 0;
+
+    document.getElementById('myGame').addEventListener('click', () => {
+        count++;
+        document.getElementById('score').innerText = count;
+    });
+
+
 
     

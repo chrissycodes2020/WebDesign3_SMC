@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 11 Homework</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        canvas {
+            border: 2px solid black;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:black;
+    
+        }
+
+        .container {
+            width:600px;
+            height: 300px;
+            display: block;
+            margin-left:auto;
+            margin-right: auto;
+        }
+
+        button{
+            width:200px;
+            height: 50px;
+            background-color: black;
+            color:white;
+            text-transform: uppercase;  
+            font-weight: 700;
+                 }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Click the moving ball on the screen: </h2>
+        <h2 id="score">0</h2>
+        <p><button type="button" value="" onclick="changeColor()">Change Target Color</button></p>
+    </div>
+
+    <canvas id="myGame" width="800" height="600">
+        Please install a newer browser to play this game.
+    </canvas>
+
+
+    <script src="canvasHWGame.js"></script>
+</body>
+</html>
