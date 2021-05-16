@@ -46,21 +46,20 @@ const ctx = canvas2.getContext('2d');
     drawFrame();
 
     canvas2.addEventListener("click", function(event){
-        console.log(event);
+        //console.log(event);
         let mouseXp = event.pageX - event.target.offsetLeft;
         let mouseYp = event.pageY - event.target.offsetTop;
 
-        console.log("Mouse X: " + mouseXp + " Mouse Y: " + mouseYp);
+        //console.log("Mouse X: " + mouseXp + " Mouse Y: " + mouseYp);
 
         let distX = Math.abs(cPosX - mouseXp);
         let distY = Math.abs(cPosY - mouseYp);
 
         if(distX < cRadius && distY < cRadius){
             console.log("Hit!!");
+            cVelX = cVelX * 1.5;
+            cVelY = cVelY * 1.5;
         }
-
-        cVelX = cVelX * 1.5;
-        cVelY = cVelY * 1.5;
     })
 
     
