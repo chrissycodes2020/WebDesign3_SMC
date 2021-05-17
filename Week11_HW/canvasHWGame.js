@@ -11,6 +11,18 @@ const ctx = canvas.getContext('2d');
     let cVelY = 1;
 
     let cRadius = 75;
+
+    let ballColor = "rgb(0, 0, 0)";
+
+    let randomColor = function (){
+
+        let randR = Math.random()*255;
+        let randG = Math.random()*255;
+        let randB = Math.random()*255;
+
+        let colValue = "rgb(" + randR + ", "+ randG +" , " + randB + ")";
+        return colValue;
+    }
     
 
 
@@ -19,7 +31,9 @@ const ctx = canvas.getContext('2d');
     function drawFrame(){
         ctx.clearRect(0, 0, cWidth, cHeight);
 
-        ctx.fillStyle = "yellow";
+        ballColor = randomColor();
+
+        ctx.fillStyle = ballColor; // define as #ff0ce2 , rgb(), "wheat"
         ctx.strokeStyle = "green";
     
         ctx.beginPath();
@@ -45,6 +59,7 @@ const ctx = canvas.getContext('2d');
 
     drawFrame();
 
+
     canvas.addEventListener("click", function(event){
         //console.log(event);
         let mouseXp = event.pageX - event.target.offsetLeft;
@@ -62,10 +77,7 @@ const ctx = canvas.getContext('2d');
         }
     })
 
-    function changeColor () {
-        var canvas = document.getElementById("myGame");
-        canvas.style.backgroundColor = "blue";
-    }
+    
 
         //new code
 
