@@ -16,17 +16,24 @@
             margin-left: auto;
             margin-right: auto;
             background-color:black;
+            margin-top: 125px;
     
         }
 
         .container {
-            width:600px;
+            width:800px;
             height: 190px;
             padding-top: 16px;
             display: block;
             margin-left:auto;
             margin-right: auto;
         }
+
+        .small-container {
+            margin-top: 26px;
+            margin-bottom: 26px;
+        }
+
 
         button{
             width:200px;
@@ -35,7 +42,9 @@
             color:white;
             text-transform: uppercase;  
             font-weight: 700;
-                 }
+            margin-top:16px;
+            margin-bottom: 16px;
+        }
 
     </style>
 </head>
@@ -44,17 +53,21 @@
     <div class="container">
         <h2>Click the moving ball on the screen: </h2>
         <h2 id="score">0</h2>
+        <hr>
         <button id="colorRand">Change Target Color</button>
-        
-        <!-- Color values and Ranges for slider-->
-        <label for="redValue">Red Value:</label>
-        <input type="range" id="redValue" min="0" max="255">
+        <br>
 
-        <label for="greenValue">Green Value:</label>
-        <input type="range" id="greenValue" min="0" max="255">
+        <div class="small-container">
+            <!-- Color values and Ranges for slider-->
+            <label for="redValue">Red Value:</label>
+            <input type="range" id="redValue" min="0" max="255">
 
-        <label for="blueValue">Blue Value:</label>
-        <input type="range" id="blueValue" min="0" max="255">
+            <label for="greenValue">Green Value:</label>
+            <input type="range" id="greenValue" min="0" max="255">
+
+            <label for="blueValue">Blue Value:</label>
+            <input type="range" id="blueValue" min="0" max="255">
+        </div>
     </div>
 
     <canvas id="myGame" width="800" height="600">

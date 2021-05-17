@@ -14,6 +14,10 @@ const ctx = canvas.getContext('2d');
 
     let ballColor = "rgb(0, 0, 0)";
 
+    const redSlider = document.getElementById("redValue");
+    const greenSlider = document.getElementById("greenValue");
+    const blueSlider = document.getElementById("blueValue");
+
     let randomColor = function (){
 
         let randR = Math.random()*255;
@@ -22,6 +26,17 @@ const ctx = canvas.getContext('2d');
 
         let colValue = "rgb(" + randR + ", "+ randG +" , " + randB + ")";
         return colValue;
+    }
+
+    let calculateColor = function (){
+
+        let valueR = redSlider.value;
+        let valueG = greenSlider.value;
+        let valueB = blueSlider.value;
+
+
+        let colValue = "rgb(" + valueR + ", " + valueG + ", " + valueB + ")";
+        ballColor = colValue;
     }
     
 
@@ -94,6 +109,12 @@ const ctx = canvas.getContext('2d');
     document.getElementById("colorRand").addEventListener("click", function(){
         ballColor = randomColor();
     })
+
+   redSlider.addEventListener("change", calculateColor);
+   greenSlider.addEventListener("change", calculateColor);
+   blueSlider.addEventListener("change", calculateColor);
+
+    
 
 
 
