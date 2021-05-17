@@ -31,7 +31,10 @@ const ctx = canvas.getContext('2d');
     function drawFrame(){
         ctx.clearRect(0, 0, cWidth, cHeight);
 
-        ballColor = randomColor();
+        // if re-generating every frame:
+        
+
+        //ballColor = randomColor();
 
         ctx.fillStyle = ballColor; // define as #ff0ce2 , rgb(), "wheat"
         ctx.strokeStyle = "green";
@@ -86,7 +89,11 @@ const ctx = canvas.getContext('2d');
     document.getElementById('myGame').addEventListener('click', () => {
         count++;
         document.getElementById('score').innerText = count;
-    });
+    })
+
+    document.getElementById("colorRand").addEventListener("click", function(){
+        ballColor = randomColor();
+    })
 
 
 
