@@ -1,0 +1,118 @@
+body{
+    margin:0px !important;
+    background-color: #E8E3DD !important;
+}
+
+/* nav */
+
+.container-fluid {
+    justify-content: space-between !important;
+    padding-top: 1rem;
+}
+
+.justify {
+    justify-content: center !important;
+}
+.cart-container {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: right !important;
+}
+
+.navbar-brand {
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    white-space: nowrap;
+    margin-right: none !important;
+    max-height: 70px;
+}
+
+.navbar-collapse {
+    padding-right: 35px !important;
+    border: none !important;
+}
+
+.navbar {
+    background-color: white !important;
+}
+
+.nav-link {
+    color: black !important;
+
+}
+
+
+button {
+    border-style: none !important;
+}
+ 
+
+
+/* containers */
+.container, .container-lg, .container-md, .container-sm {
+    max-width: 100% !important;
+
+}
+
+/* carousel */
+.carousel {
+    height: 300px !important;
+  }
+
+  .carousel-caption h1 {
+    font-size: calc(1.5rem + 1.5vw) !important;
+
+  }
+
+
+/* home main */
+
+
+
+.homeImage01{
+    max-width: 600px !important;
+}
+
+.homeImage02{
+    max-width: 500px !important;
+    margin-top: -28em;
+    
+}
+
+
+
+
+
+/*responsive */
+
+
+@media (min-width: 375px) {
+
+    .featurette-heading {
+      font-size: 2.5rem !important;
+      font-family: 'Space Grotesk'!important;
+    }
+  
+    .lead {
+      font-family: 'Source Code Pro', monospace !important;
+      font-size: 1rem !important;
+      line-height: 35px;
+  
+    }
+
+ 
+    @media (min-width: 776px) {
+      .lead {
+        font-family: 'Source Code Pro', monospace !important;
+        font-size: 1.5rem !important;
+        line-height: 55px !important;
+  
+      }
+    }
+  
+    @media (min-width: 1200px) {
+      h1 {
+          font-family: Arial, Helvetica, sans-serif !important;
+      }
+    }
+}
