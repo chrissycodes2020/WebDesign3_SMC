@@ -22,14 +22,26 @@
     <header>
         <nav class="navbar navbar-expand-sm fixed-top" aria-label="Third navbar example">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                      </svg>
-                  </button>
-                <img class="navbar-brand" src="Images/RetroLogoWeb-01.png" alt="imglogo" href="index.html">
+
+                <div class="button order-sm-1 order-md-0">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="logoImage order-sm-2 order-md-1">
+                    <img class="navbar-brand order-md-2" src="Images/RetroLogoWeb-01.png" alt="imglogo" href="index.html">
+                </div>
+                
+                <div class="cart order-sm-3 order-md-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart order-md-3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                </div>
         
-                <div class="collapse navbar-collapse justify" id="navbarsExample03">
+                <div class="collapse navbar-collapse justify order-md-2" id="navbarsExample03">
                     <ul class="navbar-nav mb-2 mb-sm-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -44,21 +56,16 @@
                         <a class="nav-link" href="#">Help</a>
                     </li>
                     </ul>
-                    </div>
+                </div>
 
-                        <div class="cart-container ps-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                            </svg>
-                        </div>
-                   
             </div>
+            
           </nav>
     </header>
 
-    <main>
+ 
          <!--Carousel START-->
-         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+         <div id="myCarousel" class="carousel slide container-fluid" data-bs-ride="carousel">
 
             <div class="carousel-indicators">
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -70,7 +77,7 @@
                 
             <!-- Banner 01 -->
             <div class="carousel-item active">
-                <img src="Images/cbackground01.png" class="carousel" width="100%" height="50%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="50%" fill="#777"/></svg>
+                <img src="Images/cbackground01.png" class="carousel img-fluid" width="100%" height="50%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="50%" fill="#777"/></svg>
                 <div class="container">
                 <div class="carousel-caption text-start">
                     <h1>Ready to <span class="blackspan">RAIZE HELL?</span></h1>
@@ -119,29 +126,30 @@
             <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </div>
+    
     <!-- Carousel END -->
 
     <!-- Main Page Start-->
-    <div class="container my-5">
-        <div class="row">
+    <div class="container-fluid">
+        <div class="row pt-5">
             <div class="col-sm-12 col-md-6 col-lg-7">
-                <h1 class="collectionHeading">Spring <br> 2021</h1>
+                <h1>Spring <br> 2021</h1>
                 <p class="collectionP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure praesentium assumenda quidem quas ratione consectetur. Fugit numquam neque quis optio sapiente, est natus voluptas blanditiis placeat mollitia in provident consequuntur!</p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-5">
-                <img src="Images/springBackground.jpg" class="homeImage01" alt="collectionimg1">
+                <img src="Images/springBackground.jpg" class="homeImage01 img-fluid" alt="collectionimg1">
             </div>
         </div>
 
         <div class="row">
-            <div class="col-sm-12 col-lg-6"></div>
-            <div class="col-sm-12 col-lg-6">
-                <img src="Images/homeImage01.JPG" class="homeImage02" alt="collectionimg2">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <img src="Images/homeImage01.JPG" class="homeImage02 img-fluid" alt="collectionimg2">
             </div>
         </div>
     </div>
-    </main>
+
 
 
     <footer>
