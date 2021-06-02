@@ -57,7 +57,7 @@ button {
 }
 
 .btn-color {
-    background-color: #BF8975 !important;
+    background-color: #721139 !important;
     margin-bottom: 20px !important;
     padding: 10px !important;
     color: white !important;
@@ -78,7 +78,7 @@ button {
 /* carousel */
 .carousel {
     height: 300px !important;
-    margin-top: 40px !important;
+   
   }
 
   .carousel-caption h1 {
@@ -89,26 +89,30 @@ button {
 
 /* home main */
 
-.homeImage02{
-    margin-top: -26em;
-    max-width: 250px !important;
-    
-}
 
 .homeImage01{
-    max-width: 315px !important;
-
-}
-
-.homeImage03 {
-    max-width: 315px !important;
+    margin-top: -26em;
+    max-width: 250px !important;
 
 }
 
 .homeImage04 {
-    margin-top: -26em !important;
+    margin-top: -26em;
     max-width: 250px !important;
-    
+
+}
+
+.pattern-background-img{
+    max-width: 316px !important;
+}
+
+
+.btn-right {
+    text-align: right !important;
+}
+
+.text-align-right {
+    text-align:right !important;
 }
 
 h1{
