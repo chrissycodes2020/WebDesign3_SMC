@@ -6,6 +6,10 @@ body{
     color: black !important;
 }
 
+p {
+    font-size: 12px !important;
+}
+
 
 /* nav */
 
@@ -66,6 +70,8 @@ button {
     font-style: normal !important;
     text-transform: uppercase !important;
 }
+
+
  
 
 
@@ -77,28 +83,41 @@ button {
 
 /* carousel */
 .carousel {
-    height: 300px !important;
+    height: 200px !important;
+    
    
   }
 
-  .carousel-caption h1 {
+.carousel-caption h1 {
     font-size: calc(1.5rem + 1.5vw) !important;
-
+    color: white !important;
+    font-size: 22px !important;
+    font-family: 'adelle-sans-ultra-thin', sans-serif !important;
   }
+
+.carousel-link{
+  color: white !important;
+  text-decoration: underline !important;
+  font-size: 16px !important;
+  font-style: italic !important;
+  font-family:  'adelle-sans', sans-serif !important;
+
+}
+
 
 
 /* home main */
 
 
 .homeImage01{
-    margin-top: -26em;
-    max-width: 250px !important;
+    margin-top: -26em !important;
+    max-width: 276px !important;
 
 }
 
 .homeImage04 {
-    margin-top: -26em;
-    max-width: 250px !important;
+    margin-top: -26em !important;
+    max-width: 276px !important;
 
 }
 
@@ -107,13 +126,26 @@ button {
 }
 
 
-.btn-right {
-    text-align: right !important;
+.text-align-center {
+    text-align: center !important;
 }
 
-.text-align-right {
-    text-align:right !important;
+.stack-text-top {
+    font-family: 'adelle-sans', sans-serif !important;
+    font-weight: 500 !important;
+    font-style: italic !important;
 }
+.stack-text-bottom {
+    margin-top: -38px !important;
+
+}
+
+hr {
+    margin-top: 5em !important;
+    margin-bottom: 5em !important;
+}
+
+
 
 h1{
     font-family: 'adelle-sans-ultra-thin', sans-serif !important;
@@ -134,33 +166,3 @@ p{
 /*responsive */
 
 
-@media (min-width: 375px) {
-
-    .featurette-heading {
-      font-size: 2.5rem !important;
-      font-family: 'Space Grotesk'!important;
-    }
-  
-    .lead {
-      font-family: 'Source Code Pro', monospace !important;
-      font-size: 1rem !important;
-      line-height: 35px;
-  
-    }
-
- 
-    @media (min-width: 776px) {
-      .lead {
-        font-family: 'Source Code Pro', monospace !important;
-        font-size: 1.5rem !important;
-        line-height: 55px !important;
-  
-      }
-    }
-  
-    @media (min-width: 1200px) {
-      h1 {
-          font-family: Arial, Helvetica, sans-serif !important;
-      }
-    }
-}
