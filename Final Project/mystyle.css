@@ -10,6 +10,11 @@ p {
     font-size: 12px !important;
 }
 
+h5{
+    color:white !important;
+    text-transform: uppercase !important;
+    font-size: 1rem !important;
+}
 
 /* nav */
 
@@ -27,8 +32,6 @@ p {
     justify-content: right !important;
 }
 
-
-
 .navbar-brand {
     padding-top: .3125rem;
     padding-bottom: .3125rem;
@@ -44,6 +47,10 @@ p {
 
 .navbar {
     background-color: white !important;
+    padding-bottom: 16px !important;
+    font-family: 'adelle-sans', sans-serif !important;
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
 }
 
 .nav-link {
@@ -61,18 +68,16 @@ button {
 }
 
 .btn-color {
-    background-color: #721139 !important;
+    background-color: #DC7C24 !important;
+    color: white !important;
     margin-bottom: 20px !important;
     padding: 10px !important;
-    color: white !important;
-    font-family:  'adelle-sans', sans-serif !important;
+    font-family: 'adelle-sans', sans-serif !important;
     font-weight: 500 !important;
     font-style: normal !important;
     text-transform: uppercase !important;
 }
 
-
- 
 
 
 /* containers */
@@ -83,27 +88,39 @@ button {
 
 /* carousel */
 .carousel {
-    height: 200px !important;
-    
-   
-  }
-
-.carousel-caption h1 {
-    font-size: calc(1.5rem + 1.5vw) !important;
-    color: white !important;
-    font-size: 22px !important;
-    font-family: 'adelle-sans-ultra-thin', sans-serif !important;
-  }
-
-.carousel-link{
-  color: white !important;
-  text-decoration: underline !important;
-  font-size: 16px !important;
-  font-style: italic !important;
-  font-family:  'adelle-sans', sans-serif !important;
-
+    height: 150px !important;
+    margin-top: 4em !important;
 }
 
+.carousel-caption h3 {
+    font-size: calc(1.5rem + 1.5vw) !important;
+    font-size: 24px !important;
+    font-family:'adelle-sans', sans-serif !important;
+    font-weight: 400 !important;
+    font-style: italic !important;
+    position: absolute !important;
+    top: -55px !important;
+
+  }
+
+.carousel-caption p {
+    font-size: calc(1.5rem + 1.5vw) !important;
+    font-size: 16px !important;
+    font-style: italic !important;
+    position: absolute !important;
+    top: 6px !important;
+    right: 100px !important;
+
+  }
+
+
+.carousel-link{
+  text-decoration: underline !important;
+  font-size: 16px !important;
+  font-family:  'adelle-sans', sans-serif !important;
+  color: white !important;
+
+}
 
 
 /* home main */
@@ -160,9 +177,107 @@ p{
     font-style: normal !important;
 
 }
+    
+/* footer */
+
+.footer {
+    background-color: black !important;
+    font-family: 'adelle-sans', sans-serif !important;
+}
+
+.logo-footer {
+    max-width: 168px;
+}
+
+.link-secondary {
+    font-family: 'adelle-sans', sans-serif !important;
+}
 
 
 
 /*responsive */
 
 
+@media (min-width: 375px) {
+
+    
+  
+    }
+
+@media (min-width: 768px) {
+        
+    .carousel-caption p {
+        font-size: calc(1.5rem + 1.5vw) !important;
+        font-size: 16px !important;
+        font-style: italic !important;
+        position: absolute !important;
+        top: -18px !important;
+        left: 83px !important;
+
+        
+    }
+    .carousel-caption h3 {
+        font-size: calc(1.5rem + 1.5vw) !important;
+        font-size: 29px !important;
+        font-family:'adelle-sans', sans-serif !important;
+        font-weight: 400 !important;
+        font-style: italic !important;
+        position: absolute !important;
+        top: -55px !important;
+    
+      }
+}
+  
+    @media (min-width: 1200px) {
+      
+        .carousel-caption p {
+            font-size: calc(1.5rem + 1.5vw) !important;
+            font-size: 16px !important;
+            font-style: italic !important;
+            position: absolute !important;
+            top: -11px !important;
+            left: 83px !important;
+    
+            
+        }
+        .carousel-caption h3 {
+            font-size: calc(1.5rem + 1.5vw) !important;
+            font-size: 36px !important;
+            font-family:'adelle-sans', sans-serif !important;
+            font-weight: 400 !important;
+            font-style: italic !important;
+            position: absolute !important;
+            top: -55px !important;
+            left: 130px !important;
+        
+          }
+        
+        .carousel-link {
+            font-size: 20px !important;
+        }
+        .resp-home-lg{
+            max-width: 316px !important;
+        }
+
+        .homeImage04 {
+            margin-top: -41em !important;
+            max-width: 500px !important;
+        }
+
+        .homeImage01{
+            margin-top: -41em !important;
+            max-width: 500px !important;
+        }
+
+        .pattern-background-img {
+            max-width: 516px !important;
+        }
+        .resp-home-colmain{
+            padding-left: 12em !important;
+            padding-top: 10em;
+
+        }
+        .h6-home-lg {
+            padding-bottom: 3rem !important;
+        }
+    }
