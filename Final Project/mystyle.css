@@ -138,6 +138,7 @@ button {
 
 }
 
+
 .pattern-background-img{
     max-width: 316px !important;
 }
@@ -191,6 +192,14 @@ p{
 
 .link-secondary {
     font-family: 'adelle-sans', sans-serif !important;
+}
+
+
+/* shop */
+
+.product-heading {
+    font-family: 'adelle-sans', sans-serif !important;
+
 }
 
 
@@ -257,6 +266,10 @@ p{
         }
         .resp-home-lg{
             max-width: 316px !important;
+        }
+
+        .resp-home-lg-02{
+            max-width: 510px !important;
         }
 
         .homeImage04 {
