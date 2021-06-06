@@ -18,6 +18,10 @@ h5{
 
 /* nav */
 
+#navbarsExample03{
+    padding-right: 152px !important;
+}
+
 .container-fluid {
     justify-content: space-between !important;
     padding-top: 1rem;
@@ -197,10 +201,38 @@ p{
 
 /* shop */
 
-.product-heading {
+.top-text{
+    margin-top: 10em !important;
+}
+
+.stack-text-top-shop {
     font-family: 'adelle-sans', sans-serif !important;
+    font-weight: 500 !important;
+    font-style: italic !important;
+}
+
+.stack-text-bottom-shop {
+    margin-top: -38px !important;
+
 
 }
+
+
+.product-heading {
+    font-family: 'adelle-sans', sans-serif !important;
+    font-weight: 600 !important;
+    font-style: italic !important;
+    font-size: 22px !important;
+    text-transform: uppercase !important;
+    padding-top: 16px !important;
+}
+
+.fs-16 {
+    font-size: 16px !important;
+}
+
+
+
 
 
 
@@ -235,6 +267,26 @@ p{
         top: -55px !important;
     
       }
+
+    
+    .stack-text-top-shop {
+        font-family: 'adelle-sans', sans-serif !important;
+        font-weight: 500 !important;
+        font-style: italic !important;
+        font-size: 116px !important;
+    }
+
+    .stack-text-bottom-shop {
+        margin-top: -63px !important;
+        font-size: 116px !important;
+    
+    }
+
+    .pwidth-shop {
+        max-width: 550px !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
 }
   
     @media (min-width: 1200px) {
@@ -292,5 +344,18 @@ p{
         }
         .h6-home-lg {
             padding-bottom: 3rem !important;
+        }
+
+        .stack-text-top {
+            font-family: 'adelle-sans', sans-serif !important;
+            font-weight: 500 !important;
+            font-style: italic !important;
+            font-size: 90px !important;
+          }
+        
+        .stack-text-bottom {
+            margin-top: -51px !important;
+            font-size: 90px !important;
+        
         }
     }
