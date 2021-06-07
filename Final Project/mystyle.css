@@ -41,7 +41,7 @@ h5{
     padding-bottom: .3125rem;
     white-space: nowrap;
     margin-right: none !important;
-    max-height: 70px;
+    max-height: 80px !important;
 }
 
 .navbar-collapse {
@@ -65,6 +65,7 @@ h5{
 .navbar-toggler:focus {
     box-shadow: none !important;
 }
+
 
 
 button {
@@ -231,6 +232,22 @@ p{
     font-size: 16px !important;
 }
 
+/* cart */
+
+.mt-extra {
+    margin-top: 8rem !important;
+}
+
+.cart-heading {
+    font-family: 'adelle-sans', sans-serif !important;
+    font-weight: 600 !important;
+    font-style: italic !important;
+    font-size: 22px !important;
+    text-transform: uppercase !important;
+    padding-top: 16px !important;
+}
+
+
 
 
 
@@ -240,12 +257,47 @@ p{
 
 
 @media (min-width: 375px) {
+    li a {
+        border-bottom: solid .1em !important;
+        width: 175% !important;
+    }
 
-    
+    li a:hover {
+        color: #721139 !important;
+    }
+
   
     }
 
 @media (min-width: 768px) {
+
+    li a {
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+        border-bottom: none !important;
+    }
+
+    li a:hover {
+        background-color: none !important;
+        color: none !important;
+    }
+
+    li a::after {
+        content:'';
+        position:absolute;
+        display: block;
+        height: 0.1em;
+        width:0%;
+        background-color: black;
+        transition: all ease-in-out 250ms;
+    }
+    
+    li a:hover::after{
+        width: 3%;
+        background-color: none !important;
+        
+    
+    }
         
     .carousel-caption p {
         font-size: calc(1.5rem + 1.5vw) !important;
@@ -268,6 +320,8 @@ p{
     
       }
 
+    /* shop */
+
     
     .stack-text-top-shop {
         font-family: 'adelle-sans', sans-serif !important;
@@ -286,6 +340,12 @@ p{
         max-width: 550px !important;
         margin-right: auto !important;
         margin-left: auto !important;
+    }
+
+    /* cart */
+
+    .cart-heading {
+        font-size: 4rem !important;
     }
 }
   
