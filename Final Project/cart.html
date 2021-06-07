@@ -36,6 +36,8 @@
                 <div class="cart order-sm-3 order-md-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart order-md-3" viewBox="0 0 16 16">
                         <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        <a class="nav-link" href="checkout.html">
+                            <span id="cartItems" class="pl-1">0</span></a>
                     </svg>
                 </div>
         
@@ -65,15 +67,16 @@
 
         <!-- Checkout Page Start-->
     <div class="container">
-        <div class="row mt-extra">
-            <div class="col-sm-12 col-md-6">
-                <img src="Images/Products/gImage05.jpg" alt="product-image" class="img-fluid">
+        <div class="row mt-extra mb-5">
+            <div class="col-sm-12 col-md-6 col-lg-7 ps-lg-5">
+                <img src="Images/Products/gImage05-2.jpg" alt="product-image" class="img-fluid">
             </div>
-            <div class="col-sm-12 col-md-6 mt-4">
-                <h4 class="cart-heading">Artisanal Handbag</h4>
+            <div class="col-sm-12 col-md-6 col-lg-5 mt-md-0 mt-lg-5 ps-md-5 ps-lg-5 m-other">
+                <h6 class="h6-home-lg">THE VINTAGE COLLECTION</h6>
+                <h4 class="cart-heading m-other-2">Artisanal Handbag</h4>
                 <p class="fs-16">$300.00</p>
-                <p class="fs-16">Description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui nulla placeat atque. Ipsum, nulla id recusandae expedita praesentium fugit, illum quis molestias cupiditate eligendi optio molestiae impedit dignissimos, architecto ab.</p>
-                <button type="button" class="btn-color my-4">Add To Bag</button>
+                <p class="fs-16 resp-home-lg-03">Description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui nulla placeat atque. Ipsum, nulla id recusandae expedita praesentium fugit, illum quis molestias cupiditate eligendi optio molestiae impedit dignissimos, architecto ab.</p>
+                <button type="button" id="addCart" class="btn-color m-other-2 mt-lg-x5"><span>Add To Bag</span></button>
             </div>
                 
 
@@ -104,9 +107,26 @@
 
     </footer>
 
+    <!-- Jquery-->
+    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Add 2 Cart-->
+    <!-- Add to Cart -->
+    <script>
+        var addItem = document.getElementById('addCart');
+        var items = document.getElementById('cartItems');
+        var count = parseInt(items.innerHTML);
+        addItem.addEventListener("click", function (event) {
+            count = parseInt(items.innerHTML);
+            items.innerHTML = count + parseInt(quantity.value);
+        });
+        
+        
+    </script>
 
   </body>
 </html>

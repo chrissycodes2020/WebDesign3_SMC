@@ -16,6 +16,8 @@ h5{
     font-size: 1rem !important;
 }
 
+
+
 /* nav */
 
 #navbarsExample03{
@@ -235,7 +237,7 @@ p{
 /* cart */
 
 .mt-extra {
-    margin-top: 8rem !important;
+    margin-top: 10rem !important;
 }
 
 .cart-heading {
@@ -264,6 +266,15 @@ p{
 
     li a:hover {
         color: #721139 !important;
+    }
+
+    .m-other {
+        margin-top: 4rem !important;
+    }
+
+    .m-other-2 {
+        margin-top: 2rem !important;
+
     }
 
   
@@ -298,6 +309,11 @@ p{
         
     
     }
+
+    h6 {
+        margin-bottom: 2rem !important;
+    }
+
         
     .carousel-caption p {
         font-size: calc(1.5rem + 1.5vw) !important;
@@ -345,11 +361,19 @@ p{
     /* cart */
 
     .cart-heading {
-        font-size: 4rem !important;
+        font-size: 2rem !important;
+    }
+
+    .mt-lg-x5{
+        margin-top: 32px !important;
     }
 }
   
     @media (min-width: 1200px) {
+
+        h6 {
+            margin-bottom: 2rem !important;
+        }
       
         .carousel-caption p {
             font-size: calc(1.5rem + 1.5vw) !important;
@@ -363,7 +387,7 @@ p{
         }
         .carousel-caption h3 {
             font-size: calc(1.5rem + 1.5vw) !important;
-            font-size: 36px !important;
+            font-size: 43px !important;
             font-family:'adelle-sans', sans-serif !important;
             font-weight: 400 !important;
             font-style: italic !important;
@@ -382,6 +406,10 @@ p{
 
         .resp-home-lg-02{
             max-width: 510px !important;
+        }
+
+        .resp-home-lg-03{
+            max-width: 386px !important;
         }
 
         .homeImage04 {
@@ -417,5 +445,14 @@ p{
             margin-top: -51px !important;
             font-size: 90px !important;
         
+        }
+
+        /* cart */
+        .mt-lg-x5{
+            margin-top: 6rem !important;
+        }
+
+        .cart-heading {
+            font-size: 3rem !important;
         }
     }
