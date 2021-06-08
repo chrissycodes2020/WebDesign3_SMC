@@ -345,6 +345,30 @@ p{
     color: white !important;
 }
 
+/* faq */
+
+.stack-text-top-faq{
+    font-family: 'adelle-sans', sans-serif !important;
+    font-weight: 500 !important;
+    font-style: italic !important;
+    font-size: 2em !important;
+
+}
+
+.stack-text-bottom-faq{
+    margin-top: -38px !important;
+    font-size: 2em !important;
+    margin-top: -23px !important;
+
+}
+
+.purple {
+    background-color: #721139 !important;
+    color: white !important;
+}
+
+
+
 
 
 
@@ -501,6 +525,24 @@ p{
         margin-top: -28px !important;
     
     }
+
+    /* faq */
+
+.stack-text-top-faq{
+    font-family: 'adelle-sans', sans-serif !important;
+    font-weight: 500 !important;
+    font-style: italic !important;
+    font-size: 44px !important;
+
+}
+
+.stack-text-bottom-faq{
+    margin-top: -38px !important;
+    font-size: 44px !important;
+    margin-top: -28px !important;
+
+}
+
 }
   
     @media (min-width: 1200px) {
