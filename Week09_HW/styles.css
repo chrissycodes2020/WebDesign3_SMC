@@ -125,7 +125,7 @@ button:hover {
 }
 
 .transform2:hover {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
     transition: 1400ms;
 }
 
