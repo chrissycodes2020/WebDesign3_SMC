@@ -11,7 +11,7 @@ p {
 }
 
 h5{
-    color:white !important;
+    color:black !important;
     text-transform: uppercase !important;
     font-size: 1rem !important;
 }
@@ -279,6 +279,11 @@ p{
 
 }
 
+.text-decoration {
+    text-decoration: none;
+    color: black !important;
+}
+
 /* cart */
 
 .mt-extra {
@@ -434,6 +439,11 @@ p{
         max-width: 550px !important;
         margin-right: auto !important;
         margin-left: auto !important;
+    }
+
+    .purple {
+        background-color: #721139 !important;
+        height: 400px !important;
     }
 
     /* cart */
