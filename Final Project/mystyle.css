@@ -227,6 +227,11 @@ p{
     font-family: 'adelle-sans', sans-serif !important;
 }
 
+.h5-footer {
+    color: white !important;
+    padding-right: 1.5rem !important;
+}
+
 
 /* shop */
 
@@ -444,6 +449,7 @@ p{
     .purple {
         background-color: #721139 !important;
         height: 400px !important;
+        width: 100% !important;
     }
 
     /* cart */
