@@ -365,6 +365,27 @@ p{
 
     }
 
+    .stack-text-top-contact {
+        font-family: 'adelle-sans', sans-serif !important;
+        font-weight: 500 !important;
+        font-style: italic !important;
+        font-size: 36px !important;
+        
+    }
+
+    .stack-text-bottom-contact {
+        margin-top: -25px !important;
+        font-size: 36px !important;
+    
+    }
+
+    .ms-other{
+        margin-left: 88px !important;
+    }
+
+    .ms-other2{
+        margin-left: 101px !important;
+    }
   
     }
 
@@ -446,10 +467,8 @@ p{
         margin-left: auto !important;
     }
 
-    .purple {
-        background-color: #721139 !important;
-        height: 400px !important;
-        width: 100% !important;
+    .color {
+        background-color: #497DB8 !important;
     }
 
     /* cart */
