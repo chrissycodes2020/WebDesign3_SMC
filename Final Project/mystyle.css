@@ -187,6 +187,7 @@ button {
 }
 
 
+
 hr {
     margin-top: 5em !important;
     margin-bottom: 5em !important;
@@ -259,8 +260,23 @@ p{
     font-size: 16px !important;
 }
 
+
+
 .hover:hover {
     color:#497DB8 !important;
+    
+}
+
+.hover2 {
+    transition: 1400ms;
+
+}
+
+.hover2:hover {
+    transform: scaleX(6);
+    transform: scaleY(1.1);
+    transition: 1400ms;
+
 }
 
 /* cart */
