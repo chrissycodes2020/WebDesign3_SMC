@@ -168,23 +168,7 @@ button {
 
 }
 
-.animateOne {
-    transition: all .4s ease 0s;
-}
 
-.animateOne:hover {
-    transform: translate(100px, 0px);
-    transition: 1400ms;
-}
-
-.animateTwo {
-    transition: all .4s ease 0s;
-}
-
-.animateTwo:hover {
-    transform: translate(-100px, 0px);
-    transition: 1400ms;
-}
 
 
 
@@ -225,6 +209,7 @@ p{
 
 .link-secondary {
     font-family: 'adelle-sans', sans-serif !important;
+    border-style: none !important;
 }
 
 .h5-footer {
@@ -475,6 +460,43 @@ p{
     
       }
 
+    .animateOne {
+        transition: all .4s ease 0s;
+    }
+    
+    .animateOne:hover {
+        transform: translate(100px, 0px);
+        transition: 1400ms;
+    }
+    
+    .animateTwo {
+        transition: all .4s ease 0s;
+    }
+    
+    .animateTwo:hover {
+        transform: translate(-100px, 0px);
+        transition: 1400ms;
+    }
+
+    .animateThree {
+        transition: all .4s ease 0s;
+    }
+    
+    .animateThree:hover {
+        transform: translate(0px, 100px);
+        transition: 1400ms;
+    }
+    
+    .animateFour {
+        transition: all .4s ease 0s;
+    }
+    
+    .animateFour:hover {
+        transform: translate(0px, 100px);
+        transition: 1400ms;
+    }
+
+
     /* shop */
 
     
@@ -620,6 +642,56 @@ p{
         .stack-text-bottom {
             margin-top: -51px !important;
             font-size: 90px !important;
+        
+        }
+
+        .animateOne {
+            transition: all .4s ease 0s;
+        }
+        
+        .animateOne:hover {
+            transform: translate(100px, 0px);
+            transition: 1400ms;
+        }
+        
+        .animateTwo {
+            transition: all .4s ease 0s;
+        }
+        
+        .animateTwo:hover {
+            transform: translate(-100px, 0px);
+            transition: 1400ms;
+        }
+
+        .animateThree {
+            transition: all .4s ease 0s;
+        }
+        
+        .animateThree:hover {
+            transform: translate(0px, 100px);
+            transition: 1400ms;
+        }
+        
+        .animateFour {
+            transition: all .4s ease 0s;
+        }
+        
+        .animateFour:hover {
+            transform: translate(0px, 100px);
+            transition: 1400ms;
+        }
+
+        .stack-text-top-contact {
+            font-family: 'adelle-sans', sans-serif !important;
+            font-weight: 500 !important;
+            font-style: italic !important;
+            font-size: 70px !important;
+            
+        }
+    
+        .stack-text-bottom-contact {
+            margin-top: -42px !important;
+            font-size: 70px !important;
         
         }
 
